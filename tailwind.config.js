@@ -3,26 +3,38 @@ module.exports = {
   content: ["./pages/*.html"],
 
   theme: {
+    fontFamily: {
+      poppins: ["Poppins"],
+      quicksand: ["Quicksand"],
+    },
     extend: {
+      container: {
+        center:true,
+        "2xl": "1320px",
+      },
+      borderColor: {
+        "light-gray": "#EEEEEE",
+      },
+      borderRadius: {
+        10: "0.625rem",
+        20: "1.25rem",
+      },
+      spacing: {
+        50: "3.125rem",
+      },
       colors: {
-        primary: "#6c7fd8",
-        dark: "#3d4750",
-        medium: "#686e7d",
+        primary: "#6C7FD8",
+        dark: "#3D4750",
         light: "#777777",
-        box: "#f8f8fb",
-        accent: "#fea99a",
+        medium: "#686E7D",
+        box: "#F8F8FB",
+        accent: "#FEA99A",
       },
       fontSize: {
         13: "0.8125rem",
         15: "0.9375rem",
-        40: "2.5rem",
-        50: "3.125rem",
+        31: "1.9375rem",
       },
-      fontFamily:{
-        quicksand:"quicksand",
-        poppins:["Poppins, sans-serif"],
-
-      }
     },
   },
   plugins: [],
