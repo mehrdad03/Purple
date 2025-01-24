@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+    .flex-between-center{
+        @apply flex justify-between items-center
+    }
+    .circle{
+        @apply after:absolute after:-right-4 after:content-[''] after:w-1.5 after:h-1.5 after:rounded-full after:inline-block after:border after:border-dark
+    }
+
+}

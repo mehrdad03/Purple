@@ -1,12 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Purple - eCommerce Tailwind CSS template</title>
-    <link rel="stylesheet" href="../assets/styles/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/styles/main.css" />
+  </head>
+  <body class="font-quicksand overflow-x-hidden">
+    <!-- Header -->
+    <header>
+      <!-- top -->
+      <div class="flex-between-center container py-5">
+        <!-- logo -->
+        <div class="w-[7.8rem] h-[2.4rem]">
+          <a href="javascript:0">
+            <img src="../assets/images/logo/logo.png" class="w-full" alt="" />
+          </a>
+        </div>
+        <!-- search box -->
+        <div
+          class="w-[37.5rem] flex items-center border border-light-gray overflow-hidden relative rounded-10"
+        >
+          <div class="flex items-center p-3.5 text-light">
+            <span>Laptop</span>
+            <i class="ri-arrow-down-s-line ml-5"></i>
+          </div>
+          <input
+            type="text"
+            placeholder="Search products ..."
+            class="outline-none px-5 w-full border-l p-3.5 text-light"
+          />
+          <i class="ri-search-line absolute right-2"></i>
+        </div>
+        <!-- right -->
+        <div
+          class="flex items-stretch justify-between gap-x-5 relative min-h-[3.25rem]"
+        >
+          <!-- Profile -->
+          <div class="flex items-center justify-between cursor-pointer group">
+            <i class="mr-2.5 ri-user-line text-primary text-3xl"></i>
+            <div class="text-dark">
+              <span class="block text-xs font-medium">Account</span>
+              <span class="block text-sm font-semibold">Login</span>
+            </div>
 
-</body>
+            <ul
+              class="menu-child-hover:text-primary absolute w-[9.375rem] shadow-submenu top-[2.93rem] -left-[2.6rem] bg-white text-medium font-l4 font-semibold p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+            >
+              <li class="py-2.5 px-4">
+                <a href="javascript:0">Register</a>
+              </li>
+              <li class="py-2.5 px-4">
+                <a href="javascript:0">Login</a>
+              </li>
+              <li class="py-2.5 px-4">
+                <a href="javascript:0">Checkout</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Wishlist -->
+          <a href="javascript:0" class="flex items-center justify-between">
+            <i class="mr-2.5 ri-star-line text-primary text-3xl"></i>
+            <div class="text-dark">
+              <span class="block text-xs font-medium">3 items</span>
+              <span class="block text-sm font-semibold">Wishlist</span>
+            </div>
+          </a>
+          <!-- Cart -->
+          <button class="flex items-center justify-between">
+            <i class="mr-2.5 ri-shopping-cart-line text-primary text-3xl"></i>
+            <div class="text-dark">
+              <span class="block text-xs font-medium">4 items</span>
+              <span class="block text-sm font-semibold">Cart</span>
+            </div>
+          </button>
+        </div>
+      </div>
+      <!-- bottom -->
+      <nav class="border-t border-b">
+        <div class="container flex items-stretch justify-between">
+          <!-- left -->
+          <ul
+            class="flex-between-center gap-x-11 menu-child-1:circle menu-child-hover:text-primary"
+          >
+            <li class="flex items-center relative">
+              <a
+                class="block text-15 py-2.5 font-semibold text-dark"
+                href="javascript:0"
+                >Home</a
+              >
+            </li>
+            <li class="flex items-center relative group">
+              <a
+                class="block text-15 py-2.5 font-semibold text-dark"
+                href="javascript:0"
+                >Categories</a
+              >
+              <!-- submenu-category -->
+              <ul
+                class="absolute shadow-submenu top-[42px] w-52 bg-white text-medium font-l4 font-semibold p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+              >
+                <li class="py-2.5 px-4">
+                  <a href="javascript:0">Category-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a href="javascript:0">Category-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a href="javascript:0">Category-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a href="javascript:0">Category-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a href="javascript:0">Category-1</a>
+                </li>
+              </ul>
+            </li>
+            <li class="flex items-center relative group">
+              <a
+                class="block text-15 py-2.5 font-semibold text-dark"
+                href="javascript:0"
+                >Products</a
+              >
+              <!-- submenu-product -->
+              <ul
+                class="absolute shadow-submenu top-[42px] w-52 bg-white text-medium font-l4 font-semibold p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+              >
+                <li class="py-2.5 px-4">
+                  <a href="javascript:0">product-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a href="javascript:0">product-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a href="javascript:0">product-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a href="javascript:0">product-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a href="javascript:0">product-1</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="flex items-center relative">
+              <a
+                class="block text-15 py-2.5 font-semibold text-dark"
+                href="javascript:0"
+                >Pages</a
+              >
+            </li>
+            <li class="flex items-center">
+              <i
+                class="ri-shield-check-line mr-2 text-primary text-15 font-semibold"
+              ></i>
+              <a
+                class="block text-15 py-2.5 font-semibold text-dark"
+                href="javascript:0"
+                >Offers</a
+              >
+            </li>
+          </ul>
+          <!-- right -->
+          <div
+            class="w-[11.25rem] relative flex items-center justify-end cursor-pointer text-light text-14 rounded-10 group"
+          >
+            <i class="ri-map-pin-line mr-3.5 text-primary text-lg"></i>
+            <span>Istanbul</span>
+            <ul
+              class="menu-child-hover:text-primary absolute w-[9.375rem] shadow-submenu top-10 left-[2.145rem] bg-white text-medium font-l4 font-semibold p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+            >
+              <li class="py-2.5 px-4">
+                <a href="javascript:0">Berlin</a>
+              </li>
+              <li class="py-2.5 px-4">
+                <a href="javascript:0">Madrid</a>
+              </li>
+              <li class="py-2.5 px-4">
+                <a href="javascript:0">Dubai</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <!-- Explore Categories -->
+    <!-- Day of the deal -->
+    <!-- Banner-one -->
+    <!-- Banner-two -->
+    <!-- New Products -->
+    <!-- Services -->
+    <!-- Vendors -->
+    <!-- Testimonials -->
+    <!-- Blog -->
+    <!-- Footer -->
+    <!-- Cart sidebar -->
+    <!-- Tools Sidebar -->
+    <!-- Back to top  -->
+
+    <script src="../assets/scripts/main.js"></script>
+  </body>
 </html>

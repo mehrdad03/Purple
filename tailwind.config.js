@@ -9,8 +9,13 @@ module.exports = {
     },
     extend: {
       container: {
-        center:true,
-        "2xl": "1320px",
+        center: true,
+        screens: {
+          sm: "480px",
+          md: "768px",
+          lg: "976px",
+          xl: "1320px",
+        },
       },
       borderColor: {
         "light-gray": "#EEEEEE",
@@ -32,10 +37,19 @@ module.exports = {
       },
       fontSize: {
         13: "0.8125rem",
+        14: "0.875rem",
         15: "0.9375rem",
         31: "1.9375rem",
       },
+      boxShadow: {
+        submenu: "2px 2px 15px 5px rgba(0, 0, 0, 0.07)",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant("menu-child-1", "&>li");
+      addVariant("menu-child-hover", "&>li a:hover");
+    },
+  ],
 };
