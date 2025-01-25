@@ -29,6 +29,7 @@ module.exports = {
       },
       borderRadius: {
         10: "0.625rem",
+        15: "0.9375rem",
         20: "1.25rem",
         30: "1.875rem",
       },
@@ -43,6 +44,7 @@ module.exports = {
         medium: "#686E7D",
         box: "#F8F8FB",
         accent: "#FEA99A",
+        "gray-mist": "#EEEEEE",
         "cat-box-color-1": "#FEF1F1",
         "cat-box-color-2": "#FBF9E4",
         "cat-box-color-3": "#F4F1FE",
