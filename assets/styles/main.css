@@ -658,6 +658,10 @@ video {
   top: 30.43rem;
 }
 
+.top-\[408px\]{
+  top: 408px;
+}
+
 .top-\[42px\]{
   top: 42px;
 }
@@ -677,6 +681,10 @@ video {
 
 .-ml-\[7\.5rem\]{
   margin-left: -7.5rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .mb-2\.5{
@@ -719,10 +727,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
 .block{
   display: block;
 }
@@ -737,6 +741,10 @@ video {
 
 .grid{
   display: grid;
+}
+
+.h-100{
+  height: 6.25rem;
 }
 
 .h-30{
@@ -773,6 +781,10 @@ video {
 
 .w-1\/2{
   width: 50%;
+}
+
+.w-100{
+  width: 6.25rem;
 }
 
 .w-12{
@@ -849,6 +861,10 @@ video {
   place-items: center;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
 }
@@ -863,10 +879,6 @@ video {
 
 .justify-between{
   justify-content: space-between;
-}
-
-.gap-4{
-  gap: 1rem;
 }
 
 .gap-5{
@@ -984,6 +996,11 @@ video {
 .border-light-gray{
   --tw-border-opacity: 1;
   border-color: rgb(238 238 238 / var(--tw-border-opacity, 1));
+}
+
+.border-primary{
+  --tw-border-opacity: 1;
+  border-color: rgb(108 127 216 / var(--tw-border-opacity, 1));
 }
 
 .bg-box{
@@ -1105,8 +1122,16 @@ video {
   padding-left: 1.875rem;
 }
 
+.pl-5{
+  padding-left: 1.25rem;
+}
+
 .pt-30{
   padding-top: 1.875rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .text-left{
@@ -1288,12 +1313,22 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300{
   transition-duration: 300ms;
 }
 
 .duration-500{
   transition-duration: 500ms;
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .flex-between-center{
@@ -1388,6 +1423,30 @@ video {
 
 .breadcrumbs li:last-child:after {
   content: "";
+}
+
+.vendors-left::before {
+  content: "";
+  background-image: url("../images/vendors/left-shape.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 489px;
+  bottom: 116px;
+}
+
+.vendors-left::after {
+  content: "";
+  background-image: url("../images/vendors/left-shape.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 369px;
+  bottom: 6px;
 }
 
 .after\:absolute::after{

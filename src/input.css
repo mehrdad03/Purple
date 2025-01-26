@@ -93,3 +93,26 @@
 .breadcrumbs li:last-child:after {
   content: "";
 }
+
+.vendors-left::before {
+  content: "";
+  background-image: url("../images/vendors/left-shape.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 489px;
+  bottom: 116px;
+}
+.vendors-left::after {
+  content: "";
+  background-image: url("../images/vendors/left-shape.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 369px;
+  bottom: 6px;
+}

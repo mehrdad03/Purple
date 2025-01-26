@@ -42,4 +42,25 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   startTimer(); // شروع تایمر
+
+  // تمامی آیتم‌های دارای کلاس vendor را انتخاب کنید
+  const vendors = document.querySelectorAll(".vendor");
+  const vendorCover = document.querySelector(".vendor-cover");
+  const vendorLogo = document.querySelector(".vender-logo");
+
+  vendors.forEach((vendor, index) => {
+    vendor.addEventListener("click", () => {
+      // حذف کلاس border-primary از همه آیتم‌ها
+      vendors.forEach((v) => v.classList.remove("border-primary"));
+
+      // افزودن کلاس به آیتم کلیک‌شده
+      vendor.classList.add("border-primary");
+
+      // تنظیم تصویر جدید برای vendor-cover
+      vendorCover.src = `../assets/images/vendors/img-${index + 1}.jpg`;
+
+      // تنظیم لوگوی جدید برای vendor-logo
+      vendorLogo.src = `../assets/images/vendors/vendor-${index + 1}.jpg`;
+    });
+  });
 });
