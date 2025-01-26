@@ -65,7 +65,7 @@
 
 .banner-full::before {
   content: "";
-  background-image: url('../images/banner-two/left-shape.png');
+  background-image: url("../images/banner-two/left-shape.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 30px;
@@ -76,7 +76,7 @@
 }
 .banner-full::after {
   content: "";
-  background-image: url('../images/banner-two/right-shape.png');
+  background-image: url("../images/banner-two/right-shape.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 30px;
@@ -84,4 +84,12 @@
   position: absolute;
   right: -30px;
   top: 194px;
+}
+.breadcrumbs li::after {
+  content: "/";
+  margin-left: 0.6rem;
+  font-weight: 300;
+}
+.breadcrumbs li:last-child:after {
+  content: "";
 }
