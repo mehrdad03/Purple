@@ -614,6 +614,10 @@ video {
   left: -2.6rem;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .bottom-10{
   bottom: 2.5rem;
 }
@@ -726,6 +730,10 @@ video {
   height: 1.875rem;
 }
 
+.h-600{
+  height: 40rem;
+}
+
 .h-72{
   height: 18rem;
 }
@@ -736,6 +744,14 @@ video {
 
 .h-\[2\.4rem\]{
   height: 2.4rem;
+}
+
+.h-\[223px\]{
+  height: 223px;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .min-h-\[3\.25rem\]{
@@ -900,6 +916,10 @@ video {
   border-top-left-radius: 1.875rem;
 }
 
+.rounded-tr-30{
+  border-top-right-radius: 1.875rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -971,6 +991,22 @@ video {
   background-color: rgb(251 242 229 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[url\(\'\.\.\/images\/banner-two\/banner\.jpg\'\)\]{
+  background-image: url('../images/banner-two/banner.jpg');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
 .fill-white{
   fill: #fff;
 }
@@ -993,6 +1029,11 @@ video {
 
 .p-5{
   padding: 1.25rem;
+}
+
+.px-30{
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
 }
 
 .px-4{
@@ -1079,6 +1120,10 @@ video {
   line-height: 2.25rem;
 }
 
+.text-40{
+  font-size: 2.5rem;
+}
+
 .text-50{
   font-size: 3.125rem;
 }
@@ -1096,6 +1141,11 @@ video {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-xs{
@@ -1125,6 +1175,10 @@ video {
 
 .leading-9{
   line-height: 2.25rem;
+}
+
+.leading-\[48px\]{
+  line-height: 48px;
 }
 
 .leading-\[9\.25rem\]{
@@ -1261,6 +1315,30 @@ video {
 .banner-two::before,
 .banner-two::after {
   background: #ffc6ce;
+}
+
+.banner-full::before {
+  content: "";
+  background-image: url('../images/banner-two/left-shape.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+}
+
+.banner-full::after {
+  content: "";
+  background-image: url('../images/banner-two/right-shape.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -30px;
+  top: 194px;
 }
 
 .after\:absolute::after{

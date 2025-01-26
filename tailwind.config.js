@@ -23,6 +23,8 @@ module.exports = {
       height: {
         30: "1.875rem",
         60: "3.75rem",
+        600: "40rem",
+
       },
       borderColor: {
         "light-gray": "#EEEEEE",
@@ -58,6 +60,7 @@ module.exports = {
         14: "0.875rem",
         15: "0.9375rem",
         31: "1.9375rem",
+        40: "2.5rem",
         50: "3.125rem",
         124: "7.75rem",
       },

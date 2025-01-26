@@ -62,3 +62,26 @@
 .banner-two::after {
   background: #ffc6ce;
 }
+
+.banner-full::before {
+  content: "";
+  background-image: url('../images/banner-two/left-shape.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+}
+.banner-full::after {
+  content: "";
+  background-image: url('../images/banner-two/right-shape.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -30px;
+  top: 194px;
+}
