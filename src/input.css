@@ -30,7 +30,35 @@
   width: 30px;
   background: #6c7fd8;
 }
-.outlined-text{
-  text-shadow: 1px 1px #111124,-1px 1px #111124,1px -1px #111124,-1px -1px #111124;
-  opacity: .3;
+.outlined-text {
+  text-shadow: 1px 1px #111124, -1px 1px #111124, 1px -1px #111124,
+    -1px -1px #111124;
+  opacity: 0.3;
+}
+
+.banner::before {
+  content: "";
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  left: -260px;
+  transform: rotate(207deg);
+  top: -160px;
+}
+.banner::after {
+  content: "";
+  width: 150px;
+  height: 300px;
+  position: absolute;
+  right: -80px;
+  transform: rotate(207deg);
+  top: 160px;
+}
+.banner-one:after,
+.banner-one::before {
+  background: #f4dab4;
+}
+.banner-two::before,
+.banner-two::after {
+  background: #ffc6ce;
 }
