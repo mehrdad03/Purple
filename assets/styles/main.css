@@ -873,6 +873,10 @@ video {
   gap: 1.25rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .gap-x-11{
   -moz-column-gap: 2.75rem;
        column-gap: 2.75rem;
