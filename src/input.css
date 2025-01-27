@@ -30,6 +30,10 @@
   width: 30px;
   background: #6c7fd8;
 }
+.text-shadow{
+  text-shadow: 1px 1px #111124, -1px 1px #111124, 1px -1px #111124,
+  -1px -1px #111124;
+}
 .outlined-text {
   text-shadow: 1px 1px #111124, -1px 1px #111124, 1px -1px #111124,
     -1px -1px #111124;

@@ -19,14 +19,15 @@ module.exports = {
       },
       width: {
         30: "1.875rem",
+        70: "4.375rem",
         100: "6.25rem",
       },
       height: {
         30: "1.875rem",
         60: "3.75rem",
+        70: "4.375rem",
         100: "6.25rem",
         600: "40rem",
-
       },
       borderColor: {
         "light-gray": "#EEEEEE",
@@ -64,12 +65,21 @@ module.exports = {
         25: "1.5625rem",
         31: "1.9375rem",
         40: "2.5rem",
+        42: "2.625rem",
         50: "3.125rem",
         124: "7.75rem",
       },
       boxShadow: {
         submenu: "2px 2px 15px 5px rgba(0, 0, 0, 0.07)",
       },
+      blur: {
+        xs: '2px',
+      },
+      rotate: {
+        '15': '15deg',
+        '25': '25deg',
+        '30': '30deg',
+      }
     },
   },
   plugins: [

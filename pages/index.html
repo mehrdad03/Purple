@@ -14,11 +14,7 @@
         <!-- logo -->
         <div class="w-[7.8rem] h-[2.4rem]">
           <a href="javascript:0">
-            <img
-              src="../assets/images/new-logo/logo.png"
-              class="w-full"
-              alt=""
-            />
+            <img src="../assets/images/logo/logo.png" class="w-full" alt="" />
           </a>
         </div>
         <!-- search box -->
@@ -1685,6 +1681,90 @@
       </div>
     </section>
     <!-- Testimonials -->
+    <section class="py-50">
+      <div class="container h-[283px] relative">
+        <div class="relative h-full">
+          <img
+            src="../assets/images/testimonials/img-1.png"
+            class="absolute w-70 h-70 rounded-20 -rotate-12"
+            alt=""
+          />
+          <img
+            src="../assets/images/testimonials/img-2.png"
+            class="absolute bottom-0 blur-xs w-12 h-12 rounded-20 rotate-12"
+            alt=""
+          />
+          <img
+            src="../assets/images/testimonials/img-3.png"
+            class="absolute -top-5 left-1/2 blur-xs w-70 h-70 rounded-20 -rotate-30"
+            alt=""
+          />
+          <img
+            src="../assets/images/testimonials/img-4.png"
+            class="absolute bottom-1/2 right-60 w-12 h-12 rounded-20 rotate-15"
+            alt=""
+          />
+          <img
+            src="../assets/images/testimonials/img-5.png"
+            class="absolute top-0-1/2 right-0 w-70 h-70 rounded-20 blur-xs"
+            alt=""
+          />
+          <img
+            src="../assets/images/testimonials/img-6.png"
+            class="absolute bottom-50 right-20 w-70 h-70 rounded-20 -rotate-25"
+            alt=""
+          />
+        </div>
+        <!-- slider -->
+        <div class="h-ful absolute inset-0 flex">
+          <h2
+            class="opacity-30 text-white font-quicksand text-42 font-bold absolute top-[110px] rotate-[270deg] text-shadow"
+          >
+            Testimonials
+          </h2>
+          <div class="swiper mySwiper4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex px-[170px] space-x-6">
+                <div class="flex items-center"><img src="../assets/images/testimonials/3.jpg" class="rounded-30" width="500" alt="" /></div>
+                <div class="flex flex-col justify-end py-3 ">
+                  <span class="block mb-2.5 font-quicksand text-xl text-dark font-semibold "
+                    >Nikki Albart
+                    <span class="block text-14 font-medium">(Team Leader)</span>
+                  </span>
+                  <span class="block rounded-30 p-5 text-14 font-medium text-medium border border-gray-mist leading-6">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at sint
+                    eligendi possimus perspiciatis asperiores reiciendis hic amet alias aut
+                    quaerat maiores blanditiis."</span>
+                </div>
+              </div>
+              <div class="swiper-slide flex px-[170px] space-x-6">
+                <div class="flex items-center"><img src="../assets/images/testimonials/1.jpg" class="rounded-30" width="500" alt="" /></div>
+                <div class="flex flex-col justify-end py-3 ">
+                  <span class="block mb-2.5 font-quicksand text-xl text-dark font-semibold "
+                    >Nikki Albart
+                    <span class="block text-14 font-medium">(Team Leader)</span>
+                  </span>
+                  <span class="block rounded-30 p-5 text-14 font-medium text-medium border border-gray-mist leading-6">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at sint
+                    eligendi possimus perspiciatis asperiores reiciendis hic amet alias aut
+                    quaerat maiores blanditiis."</span>
+                </div>
+              </div>
+              <div class="swiper-slide flex px-[170px] space-x-6">
+                <div class="flex items-center"><img src="../assets/images/testimonials/2.jpg" class="rounded-30" width="500" alt="" /></div>
+                <div class="flex flex-col justify-end py-3 ">
+                  <span class="block mb-2.5 font-quicksand text-xl text-dark font-semibold "
+                    >Nikki Albart
+                    <span class="block text-14 font-medium">(Team Leader)</span>
+                  </span>
+                  <span class="block rounded-30 p-5 text-14 font-medium text-medium border border-gray-mist leading-6">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at sint
+                    eligendi possimus perspiciatis asperiores reiciendis hic amet alias aut
+                    quaerat maiores blanditiis."</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Blog -->
     <!-- Footer -->
     <!-- Cart sidebar -->
@@ -1766,6 +1846,12 @@
             spaceBetween: 30,
           },
         },
+      });
+      var swiper = new Swiper(".mySwiper4", {
+        loop:true,
+        autoplay:{
+          delay:3000,
+        }
       });
     </script>
   </body>
