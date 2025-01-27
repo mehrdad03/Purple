@@ -1999,10 +1999,155 @@
         </div>
       </div>
     </footer>
-    <!-- Cart sidebar -->
     <!-- Tools Sidebar -->
+    <div class="tools transition-all duration-300 fixed -right-300 h-screen bg-white w-300 top-0 z-20">
+      <!-- head -->
+      <div class="p-4 flex-between-center border-b">
+        <span class="block text-base font-quicksand font-medium">Tools</span>
+        <i class="ri-close-line text-lg font-medium text-close-icon cursor-pointer"></i>
+      </div>
+      <!-- Tolls body -->
+      <div class="p-4">
+        <!-- Select Color -->
+        <div>
+          <span class="block text-14 text-dark font-quicksand mb-4"
+            >Select color</span
+          >
+          <div class="grid grid-cols-5 gap-4">
+            <span
+              class="block w-9 h-9 rounded-md cursor-pointer bg-royalPurple"
+            ></span>
+            <span
+              class="block w-9 h-9 rounded-md cursor-pointer bg-skyBlue"
+            ></span>
+            <span
+              class="block w-9 h-9 rounded-md cursor-pointer bg-sunsetOrange"
+            ></span>
+            <span
+              class="block w-9 h-9 rounded-md cursor-pointer bg-aqua"
+            ></span>
+            <span
+              class="block w-9 h-9 rounded-md cursor-pointer bg-hotPink"
+            ></span>
+            <span
+              class="block w-9 h-9 rounded-md cursor-pointer bg-deepBlue"
+            ></span>
+            <span
+              class="block w-9 h-9 rounded-md cursor-pointer bg-slateGray"
+            ></span>
+            <span
+              class="block w-9 h-9 rounded-md cursor-pointer bg-mintGreen"
+            ></span>
+            <span
+              class="block w-9 h-9 rounded-md cursor-pointer bg-fireRed"
+            ></span>
+            <span
+              class="block w-9 h-9 rounded-md cursor-pointer bg-accent"
+            ></span>
+          </div>
+        </div>
+        <!-- Dark Modes -->
+        <div>
+          <span class="block text-14 text-dark font-quicksand my-4"
+            >Select color</span
+          >
+          <div class="flex space-x-5">
+            <div class="text-center cursor-pointer">
+              <div
+                class="w-32 rounded-10 cursor-pointer border p-1 border-primary"
+              >
+                <img
+                  src="../assets/images/tools/dark.png"
+                  class="rounded-10"
+                  alt=""
+                />
+              </div>
+              <span class="block text-14 text-dark mt-2">Light</span>
+            </div>
+            <div class="text-center cursor-pointer">
+              <div class="w-32 rounded-10 cursor-pointer border p-1">
+                <img
+                  src="../assets/images/tools/light.png"
+                  class="rounded-10"
+                  alt=""
+                />
+              </div>
+              <span class="block text-14 text-dark mt-2">Dark</span>
+            </div>
+          </div>
+        </div>
+        <!-- RTL Modes -->
+        <div>
+          <span class="block text-14 text-dark font-quicksand my-4"
+            >RTL Modes</span
+          >
+          <div class="flex space-x-5">
+            <div class="text-center cursor-pointer">
+              <div
+                class="w-32 rounded-10 cursor-pointer border p-1 border-primary"
+              >
+                <img
+                  src="../assets/images/tools/rtl.png"
+                  class="rounded-10"
+                  alt=""
+                />
+              </div>
+              <span class="block text-14 text-dark mt-2">LTR</span>
+            </div>
+            <div class="text-center cursor-pointer">
+              <div class="w-32 rounded-10 cursor-pointer border p-1">
+                <img
+                  src="../assets/images/tools/ltr.png"
+                  class="rounded-10"
+                  alt=""
+                />
+              </div>
+              <span class="block text-14 text-dark mt-2">RTL</span>
+            </div>
+          </div>
+        </div>
+        <!-- Box Design -->
+        <div>
+          <span class="block text-14 text-dark font-quicksand my-4"
+            >Box Design</span
+          >
+          <div class="flex space-x-5">
+            <div class="text-center cursor-pointer">
+              <div class="w-32 rounded-10 border p-1 border-primary">
+                <img
+                  src="../assets/images/tools/box-0.png"
+                  class="rounded-10"
+                  alt=""
+                />
+              </div>
+              <span class="block text-14 text-dark mt-2">Default</span>
+            </div>
+            <div class="text-center cursor-pointer">
+              <div class="w-32 rounded-10 border p-1">
+                <img
+                  src="../assets/images/tools/box-1.png"
+                  class="rounded-10"
+                  alt=""
+                />
+              </div>
+              <span class="block text-14 text-dark mt-2">Box-1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tools btn -->
+    <div
+      class="tools-btn flex justify-center items-center cursor-pointer rounded-tl-md rounded-bl-md bg-dark w-10 h-10 fixed right-0 top-1/2 transform -translate-y-1/2"
+    >
+      <i class="ri-settings-fill text-white text-2xl"></i>
+    </div>
+    <!-- overlay -->
+    <div class="overlay duration-200 ease-in fixed inset-0 z-10 bg-black opacity-0 invisible"></div>
+
+    <!-- Cart sidebar -->
     <!-- Back to top  -->
-   
 
     <script src="../assets/scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

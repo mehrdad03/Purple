@@ -21,6 +21,7 @@ module.exports = {
         30: "1.875rem",
         70: "4.375rem",
         100: "6.25rem",
+        300: "18.75rem",
       },
       height: {
         30: "1.875rem",
@@ -41,6 +42,10 @@ module.exports = {
       spacing: {
         30: "1.875rem",
         50: "3.125rem",
+        300: "18.75rem",
+      },
+      backgroundColor: {
+        dark: "#3D4750",
       },
       colors: {
         primary: "#6C7FD8",
@@ -49,6 +54,7 @@ module.exports = {
         medium: "#686E7D",
         box: "#F8F8FB",
         accent: "#FEA99A",
+        "close-icon": "#FF0000",
         "yellow-light": "#FBF2E5",
         "yellow-medium": "#F4DAB4",
         "pink-light": "#FFE8EE",
@@ -57,6 +63,15 @@ module.exports = {
         "cat-box-color-2": "#FBF9E4",
         "cat-box-color-3": "#F4F1FE",
         "cat-box-color-4": "#E1FCF2",
+        royalPurple: '#8118D5', // بنفش سلطنتی
+        skyBlue: '#5F6AF5',     // آبی آسمانی
+        sunsetOrange: '#F5885F', // نارنجی غروب
+        aqua: '#32DBE2',        // آبی آکوآ
+        deepBlue: '#3F51B5',    // آبی عمیق
+        fireRed: '#F44336',     // قرمز آتشین
+        hotPink: '#E91E63',     // صورتی پررنگ
+        slateGray: '#607D8B',   // خاکستری تخته‌ای
+        mintGreen: '#5EB595',   // سبز نعنایی
       },
       fontSize: {
         13: "0.8125rem",
