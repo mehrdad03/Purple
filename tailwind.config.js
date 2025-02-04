@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./pages/*.html"],
-
+  safelist: ["opacity-50"],
   theme: {
     fontFamily: {
       poppins: ["Poppins"],
@@ -63,15 +63,15 @@ module.exports = {
         "cat-box-color-2": "#FBF9E4",
         "cat-box-color-3": "#F4F1FE",
         "cat-box-color-4": "#E1FCF2",
-        royalPurple: '#8118D5', // بنفش سلطنتی
-        skyBlue: '#5F6AF5',     // آبی آسمانی
-        sunsetOrange: '#F5885F', // نارنجی غروب
-        aqua: '#32DBE2',        // آبی آکوآ
-        deepBlue: '#3F51B5',    // آبی عمیق
-        fireRed: '#F44336',     // قرمز آتشین
-        hotPink: '#E91E63',     // صورتی پررنگ
-        slateGray: '#607D8B',   // خاکستری تخته‌ای
-        mintGreen: '#5EB595',   // سبز نعنایی
+        royalPurple: "#8118D5", // بنفش سلطنتی
+        skyBlue: "#5F6AF5", // آبی آسمانی
+        sunsetOrange: "#F5885F", // نارنجی غروب
+        aqua: "#32DBE2", // آبی آکوآ
+        deepBlue: "#3F51B5", // آبی عمیق
+        fireRed: "#F44336", // قرمز آتشین
+        hotPink: "#E91E63", // صورتی پررنگ
+        slateGray: "#607D8B", // خاکستری تخته‌ای
+        mintGreen: "#5EB595", // سبز نعنایی
       },
       fontSize: {
         13: "0.8125rem",
@@ -88,13 +88,13 @@ module.exports = {
         submenu: "2px 2px 15px 5px rgba(0, 0, 0, 0.07)",
       },
       blur: {
-        xs: '2px',
+        xs: "2px",
       },
       rotate: {
-        '15': '15deg',
-        '25': '25deg',
-        '30': '30deg',
-      }
+        15: "15deg",
+        25: "25deg",
+        30: "30deg",
+      },
     },
   },
   plugins: [
