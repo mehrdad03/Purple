@@ -1,7 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./pages/*.html"],
-  safelist: ["opacity-50"],
+  safelist: [
+    "opacity-50",
+    "text-royalPurple",
+    "text-skyBlue",
+    "text-sunsetOrange",
+    "text-aqua",
+    "text-hotPink",
+    "text-deepBlue",
+    "text-slateGray",
+    "text-mintGreen",
+    "text-fireRed",
+    "text-accent",
+  ],
   theme: {
     fontFamily: {
       poppins: ["Poppins"],

@@ -1528,17 +1528,17 @@
         <!-- Select Color -->
         <div>
           <span class="block text-14 text-dark font-quicksand mb-4">Select color</span>
-          <div class="grid grid-cols-5 gap-4">
-            <span class="block w-9 h-9 rounded-md cursor-pointer bg-royalPurple"></span>
-            <span class="block w-9 h-9 rounded-md cursor-pointer bg-skyBlue"></span>
-            <span class="block w-9 h-9 rounded-md cursor-pointer bg-sunsetOrange"></span>
-            <span class="block w-9 h-9 rounded-md cursor-pointer bg-aqua"></span>
-            <span class="block w-9 h-9 rounded-md cursor-pointer bg-hotPink"></span>
-            <span class="block w-9 h-9 rounded-md cursor-pointer bg-deepBlue"></span>
-            <span class="block w-9 h-9 rounded-md cursor-pointer bg-slateGray"></span>
-            <span class="block w-9 h-9 rounded-md cursor-pointer bg-mintGreen"></span>
-            <span class="block w-9 h-9 rounded-md cursor-pointer bg-fireRed"></span>
-            <span class="block w-9 h-9 rounded-md cursor-pointer bg-accent"></span>
+          <div class="grid grid-cols-5 gap-4" id="change-color">
+            <span data-color="royalPurple" class="flex items-center justify-center w-9 h-9 rounded-md cursor-pointer bg-royalPurple"></span>
+            <span data-color="skyBlue" class="flex items-center justify-center w-9 h-9 rounded-md cursor-pointer bg-skyBlue"></span>
+            <span data-color="sunsetOrange" class="flex items-center justify-center w-9 h-9 rounded-md cursor-pointer bg-sunsetOrange"></span>
+            <span data-color="aqua" class="flex items-center justify-center w-9 h-9 rounded-md cursor-pointer bg-aqua"></span>
+            <span data-color="hotPink" class="flex items-center justify-center w-9 h-9 rounded-md cursor-pointer bg-hotPink"></span>
+            <span data-color="deepBlue" class="flex items-center justify-center w-9 h-9 rounded-md cursor-pointer bg-deepBlue"></span>
+            <span data-color="slateGray" class="flex items-center justify-center w-9 h-9 rounded-md cursor-pointer bg-slateGray"></span>
+            <span data-color="mintGreen" class="flex items-center justify-center w-9 h-9 rounded-md cursor-pointer bg-mintGreen"></span>
+            <span data-color="fireRed" class="flex items-center justify-center w-9 h-9 rounded-md cursor-pointer bg-fireRed"></span>
+            <span data-color="accent" class="flex items-center justify-center w-9 h-9 rounded-md cursor-pointer bg-accent"></span>
           </div>
         </div>
         <!-- Dark Modes -->
@@ -1611,6 +1611,7 @@
     <!-- Back to top  -->
 
     <script src="../assets/scripts/main.js"></script>
+    <script src="../assets/scripts/tools_sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
