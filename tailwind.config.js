@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./pages/*.html"],
   safelist: [
     "opacity-50",
@@ -84,6 +85,11 @@ module.exports = {
         hotPink: "#E91E63", // صورتی پررنگ
         slateGray: "#607D8B", // خاکستری تخته‌ای
         mintGreen: "#5EB595", // سبز نعنایی
+        DarkModeBodyColor: "#22252F",
+        DarkModeBoxColor: "#2D313E",
+        DarkModeTextColor: "#9BA5B5",
+        DarkModeBorderColor: "#494E5D",
+        DarkModeHeroColor: "#1D2029",
       },
       fontSize: {
         13: "0.8125rem",

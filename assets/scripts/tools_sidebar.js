@@ -64,4 +64,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // بارگذاری رنگ ذخیره‌شده
     loadSavedTextColor();
+
+
+
+    // Dark Mode
+    const darkModeBtn = document.getElementById("DarkMode");
+    const lightModeBtn = document.getElementById("LightMode");
+
+    function updateActiveButton(activeBtn, inactiveBtn) {
+        activeBtn.querySelector("div").classList.add("border-primary");
+        inactiveBtn.querySelector("div").classList.remove("border-primary");
+    }
+
+    // بررسی وضعیت ذخیره‌شده در localStorage هنگام بارگذاری صفحه
+    if (localStorage.theme === "dark") {
+        document.documentElement.classList.add("dark");
+        updateActiveButton(darkModeBtn, lightModeBtn);
+    } else {
+        document.documentElement.classList.remove("dark");
+        updateActiveButton(lightModeBtn, darkModeBtn);
+    }
+
+    // دکمه دارک مود
+    darkModeBtn.addEventListener("click", function () {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+        updateActiveButton(darkModeBtn, lightModeBtn);
+    });
+
+    // دکمه لایت مود
+    lightModeBtn.addEventListener("click", function () {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+        updateActiveButton(lightModeBtn, darkModeBtn);
+    });
 });
