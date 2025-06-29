@@ -13,6 +13,9 @@
   .circle {
     @apply after:absolute after:-right-4 after:content-[''] after:w-1.5 after:h-1.5 after:rounded-full after:inline-block after:border after:border-dark;
   }
+  html[dir="rtl"] .circle {
+    @apply after:-left-4  after:right-auto;
+  }
 }
 .swiper-custom-bullet {
   width: 15px;
@@ -91,6 +94,12 @@
   content: "/";
   margin-left: 0.6rem;
   font-weight: 300;
+}
+
+html[dir="rtl"] .breadcrumbs li::after {
+
+  margin-right: 0.6rem;
+
 }
 .breadcrumbs li:last-child:after {
   content: "";

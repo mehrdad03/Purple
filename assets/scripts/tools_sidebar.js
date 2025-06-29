@@ -98,4 +98,36 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("theme", "light");
         updateActiveButton(lightModeBtn, darkModeBtn);
     });
+
+    //  کنترل تغییر زبان RTL/LTR
+    const dirOptions = document.querySelectorAll("#direction-toggle [data-dir]");
+    function changeDirection(dir) {
+        document.documentElement.setAttribute("dir", dir);
+        localStorage.setItem("direction", dir);
+
+        // آپدیت استایل انتخاب‌شده
+        document.querySelectorAll("#direction-toggle .border-primary").forEach(el => {
+            el.classList.remove("border-primary");
+        });
+
+        if (dir === "rtl") {
+            document.getElementById("rtl-option").classList.add("border-primary");
+        } else {
+            document.getElementById("ltr-option").classList.add("border-primary");
+        }
+    }
+
+    dirOptions.forEach(option => {
+        option.addEventListener("click", () => {
+            const dir = option.dataset.dir;
+            changeDirection(dir);
+        });
+    });
+
+    // بارگذاری جهت ذخیره‌شده
+    const savedDir = localStorage.getItem("direction");
+    if (savedDir) {
+        changeDirection(savedDir);
+    }
+
 });

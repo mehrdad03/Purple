@@ -21,27 +21,27 @@
         <div class="w-[37.5rem] flex items-center border border-light-gray dark:border-DarkModeBorderColor overflow-hidden relative rounded-10">
           <div class="flex items-center p-3.5 text-light dark:text-DarkModeTextColor dark:bg-DarkModeBoxColor">
             <span>Laptop</span>
-            <i class="ri-arrow-down-s-line ml-5"></i>
+            <i class="ri-arrow-down-s-line ltr:ml-5 rtl:mr-5"></i>
           </div>
           <input
             type="text"
             placeholder="Search products ..."
             class="outline-none px-5 w-full border-l DarkModeTextColor dark:border-DarkModeBorderColor p-3.5 text-light dark:bg-DarkModeBoxColor"
           />
-          <i class="ri-search-line absolute right-2 dark:text-DarkModeTextColor"></i>
+          <i class="ri-search-line absolute ltr:right-2 rtl:left-2 dark:text-DarkModeTextColor"></i>
         </div>
         <!-- right -->
         <div class="flex items-stretch justify-between gap-x-5 relative min-h-[3.25rem]">
           <!-- Profile -->
           <div class="flex items-center justify-between cursor-pointer group">
-            <i class="mr-2.5 ri-user-line text-primary text-3xl"></i>
+            <i class="ltr:mr-2.5 rtl:ml-2.5 ri-user-line text-primary text-3xl"></i>
             <div class="text-dark">
               <span class="block text-xs font-medium dark:text-DarkModeTextColor">Account</span>
               <span class="block text-sm font-semibold dark:text-white">Login</span>
             </div>
 
             <ul
-              class="z-10 border dark:border-DarkModeBorderColor menu-child-hover:text-primary absolute w-[9.375rem] shadow-submenu top-[2.93rem] -left-[2.6rem] bg-white dark:bg-DarkModeBoxColor text-medium dark:text-DarkModeTextColor font-l4 font-semibold p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+              class="z-10 border dark:border-DarkModeBorderColor menu-child-hover:text-primary absolute w-[9.375rem] shadow-submenu top-[2.93rem] ltr:-left-[2.6rem] rtl:-right-[2.6rem] bg-white dark:bg-DarkModeBoxColor text-medium dark:text-DarkModeTextColor font-l4 font-semibold p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
             >
               <li class="py-2.5 px-4">
                 <a href="javascript:0">Register</a>
@@ -56,7 +56,7 @@
           </div>
           <!-- Wishlist -->
           <a href="javascript:0" class="flex items-center justify-between">
-            <i class="mr-2.5 ri-star-line text-primary text-3xl"></i>
+            <i class="ltr:mr-2.5 rtl:ml-2.5 ri-star-line text-primary text-3xl"></i>
             <div class="text-dark">
               <span class="block text-xs font-medium dark:text-DarkModeTextColor">3 items</span>
               <span class="block text-sm font-semibold dark:text-white">Wishlist</span>
@@ -64,7 +64,7 @@
           </a>
           <!-- Cart -->
           <button class="flex items-center justify-between">
-            <i class="mr-2.5 ri-shopping-cart-line text-primary text-3xl"></i>
+            <i class="ltr:mr-2.5 rtl:ml-2.5 ri-shopping-cart-line text-primary text-3xl"></i>
             <div class="text-dark">
               <span class="block text-xs font-medium dark:text-DarkModeTextColor">4 items</span>
               <span class="block text-sm font-semibold dark:text-white">Cart</span>
@@ -131,7 +131,7 @@
               <a class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Pages</a>
             </li>
             <li class="flex items-center">
-              <i class="ri-shield-check-line mr-2 text-primary text-15 font-medium"></i>
+              <i class="ri-shield-check-line ltr:mr-2 rtl:ml-2 text-primary text-15 font-medium"></i>
               <a class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Offers</a>
             </li>
           </ul>
@@ -140,7 +140,7 @@
             <i class="ri-map-pin-line mr-3.5 text-primary text-lg"></i>
             <span class="dark:text-DarkModeTextColor">Istanbul</span>
             <ul
-              class="z-10 border dark:border-DarkModeBorderColor menu-child-hover:text-primary absolute w-[9.375rem] shadow-submenu top-10 left-[2.145rem] bg-white dark:bg-DarkModeBoxColor text-medium dark:text-DarkModeTextColor font-l4 font-semibold p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+              class="z-10 border dark:border-DarkModeBorderColor menu-child-hover:text-primary absolute w-[9.375rem] shadow-submenu top-10 ltr:left-[2.145rem] rtl:right-[2.145rem]  bg-white dark:bg-DarkModeBoxColor text-medium dark:text-DarkModeTextColor font-l4 font-semibold p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
             >
               <li class="py-2.5 px-4">
                 <a href="javascript:0">Berlin</a>
@@ -160,7 +160,7 @@
     <!-- Hero -->
     <section class="bg-box dark:bg-DarkModeHeroColor py-50">
       <div class="container relative">
-        <ul class="absolute bottom-10 -left-20 text-light text-base space-y-3 font-medium">
+        <ul class="absolute bottom-10 ltr:-left-20 rtl:-right-20 text-light text-base space-y-3 font-medium">
           <li class="rotate-[270deg]"><a href="">EN</a></li>
           <li class="rotate-[270deg]"><a href="">TR</a></li>
           <li class="rotate-[270deg]"><a href="">FR</a></li>
@@ -173,7 +173,8 @@
               <div>
                 <span class="inline-block text-lg font-light mb-5 text-light">Flat 30% Off</span>
                 <p
-                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem] after:-right-[1.875rem] font-quicksand text-50 font-bold text-dark dark:text-white"
+                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem]
+                   ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand text-50 font-bold text-dark dark:text-white"
                 >
                   Find your
                   <span class="text-primary"> perfect </span>
@@ -208,7 +209,8 @@
               <div>
                 <span class="inline-block text-lg font-light mb-5 text-light">Flat 30% Off</span>
                 <p
-                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem] after:-right-[1.875rem] font-quicksand text-50 font-bold text-dark dark:text-white"
+                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem]
+                  ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand text-50 font-bold text-dark dark:text-white"
                 >
                   Find your
                   <span class="text-primary"> perfect </span>
@@ -232,7 +234,8 @@
               <div>
                 <span class="inline-block text-lg font-light mb-5 text-light">Flat 30% Off</span>
                 <p
-                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem] after:-right-[1.875rem] font-quicksand text-50 font-bold text-dark dark:text-white"
+                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem] 
+                  ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand text-50 font-bold text-dark dark:text-white"
                 >
                   Find your
                   <span class="text-primary"> perfect </span>
@@ -260,7 +263,7 @@
     <section class="py-50">
       <div class="container flex">
         <!-- left -->
-        <div class="exploreCategories w-2/5 mr-3 relative">
+        <div class="exploreCategories w-2/5 ltr:mr-3 rtl:ml-3 relative">
           <img src="../assets/images/category/category.jpg" class="w-full rounded-30" alt="" />
         </div>
         <!-- right -->
@@ -692,14 +695,14 @@
     </section>
     <!-- Banner-one -->
     <section class="py-50">
-      <div class="container flex-between-center space-x-6">
+      <div class="container flex-between-center rtl:space-x-reverse space-x-6">
         <!-- left -->
         <div class="banner banner-one overflow-hidden relative group w-1/2 flex-between-center bg-yellow-light p-30 rounded-20">
-          <div class="w-72 h-72 z-10 mr-5">
+          <div class="w-72 h-72 z-10 ltr:mr-5 rtl:ml-5">
             <img src="../assets/images/banner-one/one.png" class="w-full group-hover:scale-105 duration-500" alt="" />
           </div>
           <div>
-            <p class="text-31 text-dark font-medium font-quicksand">
+            <p class="text-31 text-dark font-medium font-quicksand z-10 relative">
               Lorem ipsum
               <br />
               & dolor sit.
@@ -714,16 +717,16 @@
         </div>
         <!-- right -->
         <div class="banner banner-two overflow-hidden relative group w-1/2 flex-between-center bg-pink-light p-30 rounded-20 w">
-          <div class="w-72 h-72 z-10 mr-5">
+          <div class="w-72 h-72 z-10 ltr:mr-5 rtl:ml-5">
             <img src="../assets/images/banner-one/two.png" class="w-full group-hover:scale-105 duration-500" alt="" />
           </div>
           <div>
-            <p class="text-31 text-dark font-medium font-quicksand">
+            <p class="text-31 text-dark font-medium font-quicksand z-10 relative">
               Lorem ipsum
               <br />
               & dolor sit.
             </p>
-            <p class="text-base font-light leading-9 text-medium">The flavour of something special</p>
+            <p class="text-base font-light leading-9 text-medium ">The flavour of something special</p>
             <a
               href=""
               class="transition-all inline-block py-2 px-5 border text-dark border-dark hover:border-primary hover:text-white hover:bg-primary rounded-10 mt-5"
@@ -765,7 +768,7 @@
             <p class="text-medium dark:text-DarkModeTextColor text-14 font-light">Shop online for new arrivals and get free shipping!</p>
           </div>
           <!-- right -->
-          <ul class="breadcrumbs flex items-center text-medium dark:text-DarkModeTextColor space-x-4 text-base font-medium">
+          <ul class="breadcrumbs flex items-center text-medium dark:text-DarkModeTextColor rtl:space-x-reverse space-x-4 text-base font-medium">
             <li><a href="javascript:0">All</a></li>
             <li class="text-primary">
               <a href="javascript:0">Snack & Spices</a>
@@ -1293,7 +1296,7 @@
           </p>
         </div>
         <!-- content -->
-        <div class="flex space-x-6">
+        <div class="flex  rtl:space-x-reverse space-x-6">
           <!-- left -->
           <div class="w-2/5 relative vendors-left">
             <img src="../assets/images/vendors/img-1.jpg" class="rounded-30 w-full vendor-cover transition-opacity duration-500 ease-in-out" alt="" />
@@ -1577,7 +1580,7 @@
         <!-- Dark Modes -->
         <div>
           <span class="block text-14 text-dark dark:text-white font-quicksand font-medium my-4">Dark Modes</span>
-          <div class="flex space-x-5">
+          <div class="flex rtl:space-x-reverse space-x-5">
             <div class="text-center cursor-pointer" id="LightMode">
               <div class="w-32 rounded-10 cursor-pointer border p-1 border-primary">
                 <img src="../assets/images/tools/light.png" class="rounded-10" alt="" />
@@ -1595,25 +1598,26 @@
         <!-- RTL Modes -->
         <div>
           <span class="block text-14 text-dark dark:text-white font-quicksand font-medium my-4">RTL Modes</span>
-          <div class="flex space-x-5">
-            <div class="text-center cursor-pointer">
-              <div class="w-32 rounded-10 cursor-pointer border p-1 border-primary">
-                <img src="../assets/images/tools/rtl.png" class="rounded-10" alt="" />
+          <div class="flex rtl:space-x-reverse space-x-5" id="direction-toggle">
+            <div class="text-center cursor-pointer" data-dir="ltr">
+              <div class="w-32 rounded-10 cursor-pointer border p-1 border-primary" id="ltr-option">
+                <img src="../assets/images/tools/rtl.png" class="rounded-10" alt="">
               </div>
               <span class="block text-14 text-dark dark:text-DarkModeTextColor mt-2">LTR</span>
             </div>
-            <div class="text-center cursor-pointer">
-              <div class="w-32 rounded-10 cursor-pointer border p-1">
-                <img src="../assets/images/tools/ltr.png" class="rounded-10" alt="" />
+            <div class="text-center cursor-pointer" data-dir="rtl">
+              <div class="w-32 rounded-10 cursor-pointer border p-1" id="rtl-option">
+                <img src="../assets/images/tools/ltr.png" class="rounded-10" alt="">
               </div>
               <span class="block text-14 text-dark dark:text-DarkModeTextColor mt-2">RTL</span>
             </div>
           </div>
+          
         </div>
         <!-- Box Design -->
         <div>
           <span class="block text-14 text-dark dark:text-white font-quicksand font-medium my-4">Box Design</span>
-          <div class="flex space-x-5">
+          <div class="flex rtl:space-x-reverse space-x-5">
             <div class="text-center cursor-pointer">
               <div class="w-32 rounded-10 border p-1 border-primary">
                 <img src="../assets/images/tools/box-0.png" class="rounded-10" alt="" />
