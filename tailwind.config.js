@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  
   darkMode: "class",
   content: ["./pages/*.html"],
   safelist: [
@@ -20,6 +19,8 @@ module.exports = {
     fontFamily: {
       poppins: ["Poppins"],
       quicksand: ["Quicksand"],
+      vazir: ['Vazirmatn', 'sans-serif'],
+
     },
     extend: {
       container: {

@@ -6,7 +6,7 @@
     <title>Purple - eCommerce Tailwind CSS template</title>
     <link rel="stylesheet" href="../assets/styles/main.css" />
   </head>
-  <body class="font-poppins overflow-x-hidden dark:bg-DarkModeBodyColor">
+  <body class="font-poppins overflow-x-hidden dark:bg-DarkModeBodyColor rtl:font-vazir">
     <!-- Header -->
     <header>
       <!-- top -->
@@ -36,21 +36,21 @@
           <div class="flex items-center justify-between cursor-pointer group">
             <i class="ltr:mr-2.5 rtl:ml-2.5 ri-user-line text-primary text-3xl"></i>
             <div class="text-dark">
-              <span class="block text-xs font-medium dark:text-DarkModeTextColor">Account</span>
-              <span class="block text-sm font-semibold dark:text-white">Login</span>
+              <span data-key="account" class="block text-xs font-medium dark:text-DarkModeTextColor">Account</span>
+              <span data-key="login" class="block text-sm font-semibold dark:text-white">Login</span>
             </div>
 
             <ul
               class="z-10 border dark:border-DarkModeBorderColor menu-child-hover:text-primary absolute w-[9.375rem] shadow-submenu top-[2.93rem] ltr:-left-[2.6rem] rtl:-right-[2.6rem] bg-white dark:bg-DarkModeBoxColor text-medium dark:text-DarkModeTextColor font-l4 font-semibold p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
             >
               <li class="py-2.5 px-4">
-                <a href="javascript:0">Register</a>
+                <a data-key="register" href="javascript:0">Register</a>
               </li>
               <li class="py-2.5 px-4">
-                <a href="javascript:0">Login</a>
+                <a data-key="login" href="javascript:0">Login</a>
               </li>
               <li class="py-2.5 px-4">
-                <a href="javascript:0">Checkout</a>
+                <a data-key="checkout" href="javascript:0">Checkout</a>
               </li>
             </ul>
           </div>
@@ -58,16 +58,16 @@
           <a href="javascript:0" class="flex items-center justify-between">
             <i class="ltr:mr-2.5 rtl:ml-2.5 ri-star-line text-primary text-3xl"></i>
             <div class="text-dark">
-              <span class="block text-xs font-medium dark:text-DarkModeTextColor">3 items</span>
-              <span class="block text-sm font-semibold dark:text-white">Wishlist</span>
+              <span data-key="items_3" class="block text-xs font-medium dark:text-DarkModeTextColor">3 items</span>
+              <span data-key="wishlist" class="block text-sm font-semibold dark:text-white">Wishlist</span>
             </div>
           </a>
           <!-- Cart -->
           <button class="flex items-center justify-between">
             <i class="ltr:mr-2.5 rtl:ml-2.5 ri-shopping-cart-line text-primary text-3xl"></i>
             <div class="text-dark">
-              <span class="block text-xs font-medium dark:text-DarkModeTextColor">4 items</span>
-              <span class="block text-sm font-semibold dark:text-white">Cart</span>
+              <span data-key="items_4" class="block text-xs font-medium dark:text-DarkModeTextColor">4 items</span>
+              <span data-key="cart" class="block text-sm font-semibold dark:text-white">Cart</span>
             </div>
           </button>
         </div>
@@ -78,78 +78,79 @@
           <!-- left -->
           <ul class="flex-between-center gap-x-11 menu-child-1:circle menu-child-hover:text-primary">
             <li class="flex items-center relative">
-              <a class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Home</a>
+              <a data-key="home" class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Home</a>
             </li>
             <li class="flex items-center relative group">
-              <a class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Categories</a>
+              <a data-key="categories" class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0"
+                >Categories</a
+              >
               <!-- submenu-category -->
               <ul
                 class="border dark:border-DarkModeBorderColor absolute shadow-submenu z-10 top-[42px] w-52 bg-white dark:bg-DarkModeBoxColor text-medium dark:text-DarkModeTextColor font-l4 font-medium p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
               >
                 <li class="py-2.5 px-4">
-                  <a href="javascript:0">Category-1</a>
+                  <a data-key="category_1" href="javascript:0">Category-1</a>
                 </li>
                 <li class="py-2.5 px-4">
-                  <a href="javascript:0">Category-1</a>
+                  <a data-key="category_1" href="javascript:0">Category-1</a>
                 </li>
                 <li class="py-2.5 px-4">
-                  <a href="javascript:0">Category-1</a>
+                  <a data-key="category_1" href="javascript:0">Category-1</a>
                 </li>
                 <li class="py-2.5 px-4">
-                  <a href="javascript:0">Category-1</a>
+                  <a data-key="category_1" href="javascript:0">Category-1</a>
                 </li>
                 <li class="py-2.5 px-4">
-                  <a href="javascript:0">Category-1</a>
+                  <a data-key="category_1" href="javascript:0">Category-1</a>
                 </li>
               </ul>
             </li>
             <li class="flex items-center relative group">
-              <a class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Products</a>
+              <a data-key="products" class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Products</a>
               <!-- submenu-product -->
               <ul
                 class="absolute border dark:border-DarkModeBorderColor shadow-submenu z-10 top-[42px] w-52 bg-white dark:bg-DarkModeBoxColor text-medium dark:text-DarkModeTextColor font-l4 font-medium p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
               >
                 <li class="py-2.5 px-4">
-                  <a href="javascript:0">product-1</a>
+                  <a data-key="product_1" href="javascript:0">product-1</a>
                 </li>
                 <li class="py-2.5 px-4">
-                  <a href="javascript:0">product-1</a>
+                  <a data-key="product_1" href="javascript:0">product-1</a>
                 </li>
                 <li class="py-2.5 px-4">
-                  <a href="javascript:0">product-1</a>
+                  <a data-key="product_1" href="javascript:0">product-1</a>
                 </li>
                 <li class="py-2.5 px-4">
-                  <a href="javascript:0">product-1</a>
+                  <a data-key="product_1" href="javascript:0">product-1</a>
                 </li>
                 <li class="py-2.5 px-4">
-                  <a href="javascript:0">product-1</a>
+                  <a data-key="product_1" href="javascript:0">product-1</a>
                 </li>
               </ul>
             </li>
-
             <li class="flex items-center relative">
-              <a class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Pages</a>
+              <a data-key="pages" class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Pages</a>
             </li>
             <li class="flex items-center">
               <i class="ri-shield-check-line ltr:mr-2 rtl:ml-2 text-primary text-15 font-medium"></i>
-              <a class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Offers</a>
+              <a data-key="offers" class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Offers</a>
             </li>
           </ul>
           <!-- right -->
           <div class="w-[11.25rem] relative flex items-center justify-end cursor-pointer text-light text-14 rounded-10 group">
             <i class="ri-map-pin-line mr-3.5 text-primary text-lg"></i>
-            <span class="dark:text-DarkModeTextColor">Istanbul</span>
+            <span data-key="istanbul" class="dark:text-DarkModeTextColor">Istanbul</span>
             <ul
-              class="z-10 border dark:border-DarkModeBorderColor menu-child-hover:text-primary absolute w-[9.375rem] shadow-submenu top-10 ltr:left-[2.145rem] rtl:right-[2.145rem]  bg-white dark:bg-DarkModeBoxColor text-medium dark:text-DarkModeTextColor font-l4 font-semibold p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+              class="z-10 border dark:border-DarkModeBorderColor menu-child-hover:text-primary absolute w-[9.375rem] shadow-submenu top-10 ltr:left-[2.145rem] rtl:right-[2.145rem] bg-white dark:bg-DarkModeBoxColor text-medium dark:text-DarkModeTextColor font-l4 font-semibold p-2.5 rounded-10 text-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
             >
               <li class="py-2.5 px-4">
-                <a href="javascript:0">Berlin</a>
+                <a data-key="berlin" href="javascript:0">Berlin</a>
               </li>
               <li class="py-2.5 px-4">
-                <a href="javascript:0">Madrid</a>
+                <a data-key="madrid" href="javascript:0">Madrid</a>
               </li>
               <li class="py-2.5 px-4">
-                <a href="javascript:0">Dubai</a>
+                <a data-key="dubai" href="javascript:0">Dubai</a>
               </li>
             </ul>
           </div>
@@ -171,17 +172,17 @@
             <div class="swiper-slide flex-between-center">
               <!-- left -->
               <div>
-                <span class="inline-block text-lg font-light mb-5 text-light">Flat 30% Off</span>
+                <span data-key="flat30" class="inline-block text-lg font-light mb-5 text-light">Flat 30% Off</span>
                 <p
-                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem]
-                   ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand text-50 font-bold text-dark dark:text-white"
+                  class="rtl:font-vazir relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem] ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand text-50 font-bold text-dark dark:text-white"
                 >
-                  Find your
-                  <span class="text-primary"> perfect </span>
+                  <span data-key="find_your_1">Find your</span>
+                  <span data-key="find_your_2" class="text-primary"> perfect </span>
                   <br />
-                  New Collection
+                  <span data-key="find_your_3">New Collection</span>
                 </p>
                 <a
+                  data-key="shop_now"
                   href="javascript:0"
                   class="transition-all inline-block py-2 px-5 border text-dark dark:text-white border-dark hover:border-primary hover:text-white hover:bg-primary rounded-10 mt-5"
                   >Shop Now</a
@@ -207,17 +208,17 @@
             <div class="swiper-slide flex-between-center">
               <!-- right -->
               <div>
-                <span class="inline-block text-lg font-light mb-5 text-light">Flat 30% Off</span>
+                <span data-key="flat30" class="inline-block text-lg font-light mb-5 text-light">Flat 30% Off</span>
                 <p
-                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem]
-                  ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand text-50 font-bold text-dark dark:text-white"
+                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem] ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand text-50 font-bold text-dark dark:text-white"
                 >
-                  Find your
-                  <span class="text-primary"> perfect </span>
+                  <span data-key="find_your_1">Find your</span>
+                  <span data-key="find_your_2" class="text-primary"> perfect </span>
                   <br />
-                  New Collection
+                  <span data-key="find_your_3">New Collection</span>
                 </p>
                 <a
+                  data-key="shop_now"
                   href="javascript:0"
                   class="transition-all inline-block py-2 px-5 border text-dark dark:text-white border-dark hover:border-primary hover:text-white hover:bg-primary rounded-10 mt-5"
                   >Shop Now</a
@@ -232,17 +233,17 @@
             <div class="swiper-slide flex-between-center">
               <!-- right -->
               <div>
-                <span class="inline-block text-lg font-light mb-5 text-light">Flat 30% Off</span>
+                <span data-key="flat30" class="inline-block text-lg font-light mb-5 text-light">Flat 30% Off</span>
                 <p
-                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem] 
-                  ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand text-50 font-bold text-dark dark:text-white"
+                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem] ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand text-50 font-bold text-dark dark:text-white"
                 >
-                  Find your
-                  <span class="text-primary"> perfect </span>
+                  <span data-key="find_your_1">Find your</span>
+                  <span data-key="find_your_2" class="text-primary"> perfect </span>
                   <br />
-                  New Collection
+                  <span data-key="find_your_3">New Collection</span>
                 </p>
                 <a
+                  data-key="shop_now"
                   href="javascript:0"
                   class="transition-all inline-block py-2 px-5 border text-dark dark:text-white border-dark hover:border-primary hover:text-white hover:bg-primary rounded-10 mt-5"
                   >Shop Now</a
@@ -259,6 +260,7 @@
         </div>
       </div>
     </section>
+
     <!-- Explore Categories -->
     <section class="py-50">
       <div class="container flex">
@@ -268,10 +270,10 @@
         </div>
         <!-- right -->
         <div class="w-3/5">
-          <h2 class="mb-7 leading-[9.25rem] text-124 font-quicksand font-bold text-white outlined-text">
-            Explore
+          <h2 class="rtl:font-vazir mb-7 leading-[9.25rem] text-124 font-quicksand font-bold text-white outlined-text">
+            <span data-key="explore_cat">Explore</span>
             <br />
-            Categories
+            <span data-key="categories2">Categories</span>
           </h2>
           <div class="swiper mySwiper2 pt-30 pl-30 rounded-tl-30 bg-white dark:bg-DarkModeBodyColor -ml-[7.5rem]">
             <div class="swiper-wrapper">
@@ -279,54 +281,58 @@
                 <div>
                   <img src="../assets/images/category/c-1.png" class="w-12" alt="" />
                 </div>
-                <span class="block text-dark dark:text-DarkModeTextColor text-base">Category name</span>
-                <span class="block text-medium dark:text-DarkModeTextColor text-13">Item number</span>
+                <span data-key="category_name" class="block text-dark dark:text-DarkModeTextColor text-base">Category name</span>
+                <span data-key="item_number" class="block text-medium dark:text-DarkModeTextColor text-13">Item number</span>
               </div>
               <div class="swiper-slide space-y-2 bg-cat-box-color-1 h-[10.125rem] place-items-center p-30 rounded-20">
                 <div>
                   <img src="../assets/images/category/c-2.png" class="w-12" alt="" />
                 </div>
-                <span class="block text-dark dark:text-DarkModeTextColor text-base">Category name</span>
-                <span class="block text-medium dark:text-DarkModeTextColor text-13">Item number</span>
+                <span data-key="category_name" class="block text-dark dark:text-DarkModeTextColor text-base">Category name</span>
+                <span data-key="item_number" class="block text-medium dark:text-DarkModeTextColor text-13">Item number</span>
               </div>
               <div class="swiper-slide space-y-2 bg-cat-box-color-3 h-[10.125rem] place-items-center p-30 rounded-20">
                 <div>
                   <img src="../assets/images/category/c-5.png" class="w-12" alt="" />
                 </div>
-                <span class="block text-dark dark:text-DarkModeTextColor text-base">Category name</span>
-                <span class="block text-medium dark:text-DarkModeTextColor text-13">Item number</span>
+                <span data-key="category_name" class="block text-dark dark:text-DarkModeTextColor text-base">Category name</span>
+                <span data-key="item_number" class="block text-medium dark:text-DarkModeTextColor text-13">Item number</span>
               </div>
               <div class="swiper-slide space-y-2 bg-cat-box-color-2 h-[10.125rem] place-items-center p-30 rounded-20">
                 <div>
                   <img src="../assets/images/category/c-3.png" class="w-12" alt="" />
                 </div>
-                <span class="block text-dark dark:text-DarkModeTextColor text-base">Category name</span>
-                <span class="block text-medium dark:text-DarkModeTextColor text-13">Item number</span>
+                <span data-key="category_name" class="block text-dark dark:text-DarkModeTextColor text-base">Category name</span>
+                <span data-key="item_number" class="block text-medium dark:text-DarkModeTextColor text-13">Item number</span>
               </div>
               <div class="swiper-slide space-y-2 bg-cat-box-color-3 h-[10.125rem] place-items-center p-30 rounded-20">
                 <div>
                   <img src="../assets/images/category/c-4.png" class="w-12" alt="" />
                 </div>
-                <span class="block text-dark dark:text-DarkModeTextColor text-base">Category name</span>
-                <span class="block text-medium dark:text-DarkModeTextColor text-13">Item number</span>
+                <span data-key="category_name" class="block text-dark dark:text-DarkModeTextColor text-base">Category name</span>
+                <span data-key="item_number" class="block text-medium dark:text-DarkModeTextColor text-13">Item number</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Day of the deal -->
     <section class="py-50">
       <div class="container">
         <!-- head -->
         <div class="flex-between-center mb-7">
           <div>
-            <h2 class="mb-2.5 font-quicksand text-dark dark:text-DarkModeTextColor text-2xl font-medium">
-              Day of the
-              <span class="text-primary"> deal </span>
+            <h2 class="rtl:font-vazir mb-2.5 font-quicksand text-dark dark:text-DarkModeTextColor text-2xl font-medium">
+              <span data-key="deal_title_1">Day of the</span>
+              <span class="text-primary" data-key="deal_title_2"> deal </span>
             </h2>
-            <p class="text-14 font-light text-medium dark:text-DarkModeTextColor">Don't wait. The time will never be just right.</p>
+            <p data-key="deal_tagline" class="text-14 font-light text-medium dark:text-DarkModeTextColor">
+              Don't wait. The time will never be just right.
+            </p>
           </div>
+
           <!-- timer -->
           <div class="bg-box dark:bg-DarkModeBoxColor rounded-15 border border-gray-mist dark:border-DarkModeBorderColor p-1.5 w-44 text-center">
             <span class="days text-dark dark:text-DarkModeTextColor text-15 font-semibold">321</span>
@@ -726,7 +732,7 @@
               <br />
               & dolor sit.
             </p>
-            <p class="text-base font-light leading-9 text-medium ">The flavour of something special</p>
+            <p class="text-base font-light leading-9 text-medium">The flavour of something special</p>
             <a
               href=""
               class="transition-all inline-block py-2 px-5 border text-dark border-dark hover:border-primary hover:text-white hover:bg-primary rounded-10 mt-5"
@@ -761,22 +767,25 @@
         <div class="flex-between-center mb-10">
           <!-- left -->
           <div>
-            <h2 class="font-quicksand font-medium text-dark dark:text-white text-25 mb-2.5">
-              New
-              <span class="text-primary">Arrivals</span>
+            <h2 class="rtl:font-vazir font-quicksand font-medium text-dark dark:text-white text-25 mb-2.5">
+              <span data-key="new_arrivals_1">New</span>
+              <span class="text-primary" data-key="new_arrivals_2">Arrivals</span>
             </h2>
-            <p class="text-medium dark:text-DarkModeTextColor text-14 font-light">Shop online for new arrivals and get free shipping!</p>
+            <p data-key="new_arrivals_tag" class="text-medium dark:text-DarkModeTextColor text-14 font-light">
+              Shop online for new arrivals and get free shipping!
+            </p>
           </div>
           <!-- right -->
           <ul class="breadcrumbs flex items-center text-medium dark:text-DarkModeTextColor rtl:space-x-reverse space-x-4 text-base font-medium">
-            <li><a href="javascript:0">All</a></li>
+            <li><a data-key="bc_all" href="javascript:0">All</a></li>
             <li class="text-primary">
-              <a href="javascript:0">Snack & Spices</a>
+              <a data-key="bc_snack" href="javascript:0">Snack & Spices</a>
             </li>
-            <li><a href="javascript:0">Fruits</a></li>
-            <li><a href="javascript:0">Vegetables</a></li>
+            <li><a data-key="bc_fruits" href="javascript:0">Fruits</a></li>
+            <li><a data-key="bc_veg" href="javascript:0">Vegetables</a></li>
           </ul>
         </div>
+
         <!-- product grid list -->
 
         <div class="grid grid-cols-4 gap-5">
@@ -1254,49 +1263,65 @@
           <div class="w-12">
             <img src="../assets/images/services/1.png" class="w-full" alt="" />
           </div>
-          <span class="block text-lg text-dark dark:text-white font-medium font-quicksand">Payment Secure</span>
-          <span class="block text-lg text-14 text-medium dark:text-DarkModeTextColor">Contact us 24 hours a day, 7 days a week</span>
+          <span data-key="svc_payment" class="block text-lg rtl:font-vazir text-dark dark:text-white font-medium font-quicksand">
+            Payment Secure
+          </span>
+          <span data-key="svc_hours" class="block text-lg rtl:font-vazir text-14 text-medium dark:text-DarkModeTextColor">
+            Contact us 24 hours a day, 7 days a week
+          </span>
         </div>
         <div class="place-items-center border border-gray-mist dark:border-DarkModeBorderColor rounded-20 space-y-3 p-30 text-center">
           <div class="w-12">
             <img src="../assets/images/services/2.png" class="w-full" alt="" />
           </div>
-          <span class="block text-lg text-dark dark:text-white font-medium font-quicksand">Payment Secure</span>
-          <span class="block text-lg text-14 text-medium dark:text-DarkModeTextColor">Contact us 24 hours a day, 7 days a week</span>
+          <span data-key="svc_payment" class="block text-lg rtl:font-vazir text-dark dark:text-white font-medium font-quicksand">
+            Payment Secure
+          </span>
+          <span data-key="svc_hours" class="block text-lg rtl:font-vazir text-14 text-medium dark:text-DarkModeTextColor">
+            Contact us 24 hours a day, 7 days a week
+          </span>
         </div>
         <div class="place-items-center border border-gray-mist dark:border-DarkModeBorderColor rounded-20 space-y-3 p-30 text-center">
           <div class="w-12">
             <img src="../assets/images/services/3.png" class="w-full" alt="" />
           </div>
-          <span class="block text-lg text-dark dark:text-white font-medium font-quicksand">Payment Secure</span>
-          <span class="block text-lg text-14 text-medium dark:text-DarkModeTextColor">Contact us 24 hours a day, 7 days a week</span>
+          <span data-key="svc_payment" class="block text-lg rtl:font-vazir text-dark dark:text-white font-medium font-quicksand">
+            Payment Secure
+          </span>
+          <span data-key="svc_hours" class="block text-lg rtl:font-vazir text-14 text-medium dark:text-DarkModeTextColor">
+            Contact us 24 hours a day, 7 days a week
+          </span>
         </div>
         <div class="place-items-center border border-gray-mist dark:border-DarkModeBorderColor rounded-20 space-y-3 p-30 text-center">
           <div class="w-12">
             <img src="../assets/images/services/4.png" class="w-full" alt="" />
           </div>
-          <span class="block text-lg text-dark dark:text-white font-medium font-quicksand">Payment Secure</span>
-          <span class="block text-lg text-14 text-medium dark:text-DarkModeTextColor">Contact us 24 hours a day, 7 days a week</span>
+          <span data-key="svc_payment" class="block text-lg rtl:font-vazir text-dark dark:text-white font-medium font-quicksand">
+            Payment Secure
+          </span>
+          <span data-key="svc_hours" class="block text-lg rtl:font-vazir text-14 text-medium dark:text-DarkModeTextColor">
+            Contact us 24 hours a day, 7 days a week
+          </span>
         </div>
       </div>
     </section>
+
     <!-- Vendors -->
     <section class="py-50">
       <div class="container">
         <!-- head -->
         <div class="text-center mb-10">
-          <h2 class="text-dark dark:text-white font-quicksand text-25 text-center font-medium">
-            Top
-            <span class="text-primary"> Vendors </span>
+          <h2 class="text-dark rtl:font-vazir dark:text-white font-quicksand text-25 text-center font-medium">
+            <span data-key="top_vendors">Top Vendors</span>
           </h2>
-          <p class="text-medium dark:text-DarkModeTextColor font-light text-14">
-            Discover Our Trusted Partners:
-            <br />
-            Excllence & Reliability in Every choice
+          <p data-key="vendors_sub" class="text-medium dark:text-DarkModeTextColor font-light text-14">
+            Discover Our Trusted Partners:<br />
+            Excellence & Reliability in Every choice
           </p>
         </div>
+
         <!-- content -->
-        <div class="flex  rtl:space-x-reverse space-x-6">
+        <div class="flex rtl:space-x-reverse space-x-6">
           <!-- left -->
           <div class="w-2/5 relative vendors-left">
             <img src="../assets/images/vendors/img-1.jpg" class="rounded-30 w-full vendor-cover transition-opacity duration-500 ease-in-out" alt="" />
@@ -1478,7 +1503,7 @@
           <a href="javascript:0" class="w-[7.8rem] h-[2.4rem] block">
             <img src="../assets/images/logo/logo.png" class="w-full" alt="" />
           </a>
-          <p class="text-14 font-normal my-30 text-medium dark:text-DarkModeTextColor leading-7">
+          <p data-key="footer_about" class="text-14 font-normal my-30 text-medium dark:text-DarkModeTextColor leading-7">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam architecto rerum id quidem
           </p>
           <div class="flex-between-center">
@@ -1492,49 +1517,55 @@
         </div>
 
         <div class="w-1/5 px-3">
-          <span class="block border-b pb-4 mb-4 border-gray-mist dark:border-DarkModeBorderColor dark:text-white">Category</span>
+          <span data-key="footer_cat" class="block border-b pb-4 mb-4 border-gray-mist dark:border-DarkModeBorderColor dark:text-white"
+            >Category</span
+          >
           <ul class="space-y-4 text-14 font-normal text-medium dark:text-DarkModeTextColor">
-            <li><a href="javascript:0">Dairy & Milk</a></li>
-            <li><a href="javascript:0">Snack & Spice</a></li>
-            <li><a href="javascript:0">Fast Food</a></li>
-            <li><a href="javascript:0">Juice & Drinks</a></li>
-            <li><a href="javascript:0">Bakery</a></li>
+            <li><a data-key="ft_dairy" href="javascript:0">Dairy & Milk</a></li>
+            <li><a data-key="ft_snack" href="javascript:0">Snack & Spice</a></li>
+            <li><a data-key="ft_fastfood" href="javascript:0">Fast Food</a></li>
+            <li><a data-key="ft_juice" href="javascript:0">Juice & Drinks</a></li>
+            <li><a data-key="ft_bakery" href="javascript:0">Bakery</a></li>
           </ul>
         </div>
         <div class="w-1/5 px-3">
-          <span class="block border-b pb-4 mb-4 border-gray-mist dark:border-DarkModeBorderColor dark:text-white">Category</span>
+          <span data-key="footer_cat" class="block border-b pb-4 mb-4 border-gray-mist dark:border-DarkModeBorderColor dark:text-white"
+            >Category</span
+          >
           <ul class="space-y-4 text-14 font-normal text-medium dark:text-DarkModeTextColor">
-            <li><a href="javascript:0">Dairy & Milk</a></li>
-            <li><a href="javascript:0">Snack & Spice</a></li>
-            <li><a href="javascript:0">Fast Food</a></li>
-            <li><a href="javascript:0">Juice & Drinks</a></li>
-            <li><a href="javascript:0">Bakery</a></li>
+            <li><a data-key="ft_dairy" href="javascript:0">Dairy & Milk</a></li>
+            <li><a data-key="ft_snack" href="javascript:0">Snack & Spice</a></li>
+            <li><a data-key="ft_fastfood" href="javascript:0">Fast Food</a></li>
+            <li><a data-key="ft_juice" href="javascript:0">Juice & Drinks</a></li>
+            <li><a data-key="ft_bakery" href="javascript:0">Bakery</a></li>
           </ul>
         </div>
         <div class="w-1/5 px-3">
-          <span class="block border-b pb-4 mb-4 border-gray-mist dark:border-DarkModeBorderColor dark:text-white">Category</span>
+          <span data-key="footer_cat" class="block border-b pb-4 mb-4 border-gray-mist dark:border-DarkModeBorderColor dark:text-white"
+            >Category</span
+          >
           <ul class="space-y-4 text-14 font-normal text-medium dark:text-DarkModeTextColor">
-            <li><a href="javascript:0">Dairy & Milk</a></li>
-            <li><a href="javascript:0">Snack & Spice</a></li>
-            <li><a href="javascript:0">Fast Food</a></li>
-            <li><a href="javascript:0">Juice & Drinks</a></li>
-            <li><a href="javascript:0">Bakery</a></li>
+            <li><a data-key="ft_dairy" href="javascript:0">Dairy & Milk</a></li>
+            <li><a data-key="ft_snack" href="javascript:0">Snack & Spice</a></li>
+            <li><a data-key="ft_fastfood" href="javascript:0">Fast Food</a></li>
+            <li><a data-key="ft_juice" href="javascript:0">Juice & Drinks</a></li>
+            <li><a data-key="ft_bakery" href="javascript:0">Bakery</a></li>
           </ul>
         </div>
         <div class="w-1/5 px-3">
-          <span class="block border-b pb-4 mb-4 border-gray-mist dark:border-DarkModeBorderColor dark:text-white">Contact</span>
+          <span data-key="contact" class="block border-b pb-4 mb-4 border-gray-mist dark:border-DarkModeBorderColor dark:text-white">Contact</span>
           <ul class="space-y-4 text-14 font-normal text-medium dark:text-DarkModeTextColor">
             <li class="flex items-baseline">
               <i class="ri-map-pin-line mr-1 text-primary"></i>
-              <p>971 Lajamni, Motavarachha, Surat, Gujarat, Bharat 394101.</p>
+              <p data-key="address">971 Lajamni, Motavarachha, Surat, Gujarat, Bharat 394101.</p>
             </li>
             <li class="flex items-baseline">
               <i class="ri-whatsapp-line mr-1 text-primary"></i>
-              <p>+00 9876543210</p>
+              <p data-key="phone">+00 9876543210</p>
             </li>
             <li class="flex items-baseline">
               <i class="ri-mail-line mr-1 text-primary"></i>
-              <p>example@email.com</p>
+              <p data-key="email">example@email.com</p>
             </li>
           </ul>
         </div>
@@ -1542,9 +1573,9 @@
       <div class="border-t dark:border-DarkModeBorderColor py-4">
         <div class="container flex-between-center">
           <p class="text-13 font-normal text-medium dark:text-DarkModeTextColor">
-            Copyright © 2025
-            <span class="text-primary">ful-stak.dev</span>
-            all rights reserved.
+            <span data-key="copyright">Copyright © 2025</span>
+            <span class="text-primary" data-key="copyright_by">ful-stak.dev</span>
+            <span data-key="all_rights">all rights reserved.</span>
           </p>
           <div>
             <img src="../assets/images/payment/payment.png" alt="" />
@@ -1552,6 +1583,7 @@
         </div>
       </div>
     </footer>
+
     <!-- Tools Sidebar -->
     <div class="tools transition-all duration-300 fixed -right-300 h-screen bg-white dark:bg-DarkModeBodyColor w-300 top-0 z-20">
       <!-- head -->
@@ -1601,18 +1633,17 @@
           <div class="flex rtl:space-x-reverse space-x-5" id="direction-toggle">
             <div class="text-center cursor-pointer" data-dir="ltr">
               <div class="w-32 rounded-10 cursor-pointer border p-1 border-primary" id="ltr-option">
-                <img src="../assets/images/tools/rtl.png" class="rounded-10" alt="">
+                <img src="../assets/images/tools/rtl.png" class="rounded-10" alt="" />
               </div>
               <span class="block text-14 text-dark dark:text-DarkModeTextColor mt-2">LTR</span>
             </div>
             <div class="text-center cursor-pointer" data-dir="rtl">
               <div class="w-32 rounded-10 cursor-pointer border p-1" id="rtl-option">
-                <img src="../assets/images/tools/ltr.png" class="rounded-10" alt="">
+                <img src="../assets/images/tools/ltr.png" class="rounded-10" alt="" />
               </div>
               <span class="block text-14 text-dark dark:text-DarkModeTextColor mt-2">RTL</span>
             </div>
           </div>
-          
         </div>
         <!-- Box Design -->
         <div>
@@ -1649,6 +1680,7 @@
 
     <script src="../assets/scripts/main.js"></script>
     <script src="../assets/scripts/tools_sidebar.js"></script>
+    <script src="../assets/scripts/translations.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
