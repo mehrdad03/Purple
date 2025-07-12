@@ -80,4 +80,63 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   startTimer(); // اجرای تایمر
+
+  // باز و بسته شدن منو در حالت موبایل
+
+  const openBtn = document.getElementById("openMobileMenu");
+  const closeBtnMenu = document.getElementById("closeMobileMenu");
+  const menu = document.getElementById("mobileMenu");
+
+  openBtn.addEventListener("click", () => {
+    menu.classList.remove("translate-x-[-100%]");
+    menu.classList.add("translate-x-0");
+
+    overlay.classList.remove("opacity-0", "invisible");
+    overlay.classList.add("opacity-50", "visible");
+  });
+
+  function closeMenu() {
+    menu.classList.remove("translate-x-0");
+    menu.classList.add("translate-x-[-100%]");
+
+    overlay.classList.remove("opacity-50", "visible");
+    overlay.classList.add("opacity-0", "invisible");
+  }
+
+  closeBtnMenu.addEventListener("click", closeMenu);
+  overlay.addEventListener("click", closeMenu);
+
+  
+
+  // باز و بسته شدن زیر شاخه ها در حالت موبایل
+  const submenuToggles = document.querySelectorAll(".submenu-toggle");
+
+  submenuToggles.forEach((toggle) => {
+
+    toggle.addEventListener("click", function () {
+
+      const parentLi = this.closest(".has-submenu");
+      const submenu = parentLi.querySelector(".submenu");
+      const icon = parentLi.querySelector(".icon-indicator");
+
+      if (submenu.classList.contains("hidden")) {
+        // باز کردن زیرمنو
+        submenu.classList.remove("hidden");
+        submenu.style.maxHeight = submenu.scrollHeight + "px";
+
+        // تغییر + به -
+        if (icon) icon.textContent = "−";
+      } else {
+        // بستن زیرمنو با انیمیشن
+        submenu.style.maxHeight = "0";
+        setTimeout(() => submenu.classList.add("hidden"), 300);
+
+        // تغییر - به +
+        if (icon) icon.textContent = "+";
+      }
+
+    });
+
+  });
+
 });

@@ -10,16 +10,18 @@
     <!-- Header -->
     <header>
       <!-- top -->
-      <div class="flex-between-center container py-5">
+      <div class="flex-between-center container py-5 flex-wrap">
         <!-- logo -->
-        <div class="w-[7.8rem] h-[2.4rem]">
+        <div class="w-full md:w-[7.8rem] h-[2.4rem] flex justify-center">
           <a href="javascript:0">
-            <img src="../assets/images/logo/logo.png" class="w-full" alt="" />
+            <img src="../assets/images/logo/logo.png" class="w-[7.8rem] h-[2.4rem] md:h-full" alt="" />
           </a>
         </div>
         <!-- search box -->
-        <div class="w-[37.5rem] flex items-center border border-light-gray dark:border-DarkModeBorderColor overflow-hidden relative rounded-10">
-          <div class="flex items-center p-3.5 text-light dark:text-DarkModeTextColor dark:bg-DarkModeBoxColor">
+        <div
+          class="w-[37.5rem] flex my-4 md:my-0 items-center border border-light-gray dark:border-DarkModeBorderColor overflow-hidden relative rounded-10"
+        >
+          <div class="md:flex hidden items-center p-3.5 text-light dark:text-DarkModeTextColor dark:bg-DarkModeBoxColor">
             <span>Laptop</span>
             <i class="ri-arrow-down-s-line ltr:ml-5 rtl:mr-5"></i>
           </div>
@@ -31,11 +33,11 @@
           <i class="ri-search-line absolute ltr:right-2 rtl:left-2 dark:text-DarkModeTextColor"></i>
         </div>
         <!-- right -->
-        <div class="flex items-stretch justify-between gap-x-5 relative min-h-[3.25rem]">
+        <div class="flex w-full md:w-[initial] justify-center items-stretch md:justify-between gap-x-5 relative min-h-[3.25rem]">
           <!-- Profile -->
           <div class="flex items-center justify-between cursor-pointer group">
             <i class="ltr:mr-2.5 rtl:ml-2.5 ri-user-line text-primary text-3xl"></i>
-            <div class="text-dark">
+            <div class="text-dark md:block hidden">
               <span data-key="account" class="block text-xs font-medium dark:text-DarkModeTextColor">Account</span>
               <span data-key="login" class="block text-sm font-semibold dark:text-white">Login</span>
             </div>
@@ -57,7 +59,7 @@
           <!-- Wishlist -->
           <a href="javascript:0" class="flex items-center justify-between">
             <i class="ltr:mr-2.5 rtl:ml-2.5 ri-star-line text-primary text-3xl"></i>
-            <div class="text-dark">
+            <div class="text-dark md:block hidden">
               <span data-key="items_3" class="block text-xs font-medium dark:text-DarkModeTextColor">3 items</span>
               <span data-key="wishlist" class="block text-sm font-semibold dark:text-white">Wishlist</span>
             </div>
@@ -65,15 +67,18 @@
           <!-- Cart -->
           <button class="flex items-center justify-between">
             <i class="ltr:mr-2.5 rtl:ml-2.5 ri-shopping-cart-line text-primary text-3xl"></i>
-            <div class="text-dark">
+            <div class="text-dark md:block hidden">
               <span data-key="items_4" class="block text-xs font-medium dark:text-DarkModeTextColor">4 items</span>
               <span data-key="cart" class="block text-sm font-semibold dark:text-white">Cart</span>
             </div>
           </button>
+          <button class="flex md:hidden items-center justify-between">
+            <i id="openMobileMenu" class="ltr:mr-2.5 rtl:ml-2.5 ri-menu-3-line text-primary text-3xl"></i>
+            </button>
         </div>
       </div>
       <!-- bottom -->
-      <nav class="border-t border-b dark:border-DarkModeBorderColor dark:bg-DarkModeBoxColor">
+      <nav class="hidden md:block border-t border-b dark:border-DarkModeBorderColor dark:bg-DarkModeBoxColor">
         <div class="container flex items-stretch justify-between">
           <!-- left -->
           <ul class="flex-between-center gap-x-11 menu-child-1:circle menu-child-hover:text-primary">
@@ -156,6 +161,84 @@
           </div>
         </div>
       </nav>
+
+      <!-- mobile menu -->
+      <nav id="mobileMenu" class=" duration-300 ease-in-out
+      translate-x-[-100%]  w-[340px]
+      fixed top-0 bottom-0 z-20
+       md:hidden border-t border-b
+        dark:border-DarkModeBorderColor dark:bg-DarkModeBoxColor">
+        <!-- head -->
+        <div class="p-4 flex-between-center border-b">
+          <span class="block text-base font-quicksand font-medium dark:text-white">My Menu</span>
+          <i id="closeMobileMenu" class="ri-close-line text-lg font-medium text-close-icon cursor-pointer"></i>
+        </div>
+        <div class="container flex items-stretch justify-between">
+          <!-- left -->
+          <ul class="p-5 flex-between-center flex-col gap-y-3 menu-child-1:mobile-menu-item  menu-child-hover:text-primary w-full">
+            <li>
+              <a data-key="home" class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Home</a>
+            </li>
+            <li class="has-submenu" >
+              <a data-key="categories" class="submenu-toggle block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0"
+                >Categories</a
+              >
+              <span class="icon-indicator absolute top-6 right-4">+</span>
+              <!-- submenu-category -->
+              <ul
+                class="submenu hidden transition-all duration-300 ease-in-out
+                overflow-hidden max-h-0
+                border w-full dark:border-DarkModeBorderColor shadow-submenu z-10 top-[42px] bg-white dark:bg-DarkModeBoxColor text-medium dark:text-DarkModeTextColor font-l4 font-medium p-2.5 rounded-10 text-14"
+              >
+                <li class="py-2.5 px-4">
+                  <a data-key="category_1" href="javascript:0">Category-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a data-key="category_1" href="javascript:0">Category-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a data-key="category_1" href="javascript:0">Category-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a data-key="category_1" href="javascript:0">Category-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a data-key="category_1" href="javascript:0">Category-1</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-submenu" >
+              <a data-key="products" class="submenu-toggle block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Products</a>
+              <span class="icon-indicator absolute top-6 right-4">+</span>
+              <!-- submenu-product -->
+              <ul
+              class="submenu hidden transition-all duration-300 ease-in-out
+                overflow-hidden max-h-0
+               border dark:border-DarkModeBorderColor shadow-submenu z-10 top-[42px] w-full bg-white dark:bg-DarkModeBoxColor text-medium dark:text-DarkModeTextColor font-l4 font-medium p-2.5 rounded-10 text-14"
+              >
+                <li class="py-2.5 px-4">
+                  <a data-key="product_1" href="javascript:0">product-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a data-key="product_1" href="javascript:0">product-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a data-key="product_1" href="javascript:0">product-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a data-key="product_1" href="javascript:0">product-1</a>
+                </li>
+                <li class="py-2.5 px-4">
+                  <a data-key="product_1" href="javascript:0">product-1</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a data-key="pages" class="block text-15 py-2.5 font-medium text-dark dark:text-DarkModeTextColor" href="javascript:0">Pages</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero -->
@@ -169,12 +252,14 @@
         </ul>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide flex-between-center">
+            <div class="swiper-slide md:flex-between-center md:flex-row flex flex-col-reverse gap-y-3  ">
               <!-- left -->
-              <div>
+              <div class="text-center">
                 <span data-key="flat30" class="inline-block text-lg font-light mb-5 text-light">Flat 30% Off</span>
                 <p
-                  class="rtl:font-vazir relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem] ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand text-50 font-bold text-dark dark:text-white"
+                  class=" rtl:font-vazir relative md:after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12
+                   after:h-60 after:-top-[2.18rem] ltr:after:-right-[1.875rem]
+                    rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand md:text-50 md:leading-[4rem] text-3xl font-bold text-dark dark:text-white"
                 >
                   <span data-key="find_your_1">Find your</span>
                   <span data-key="find_your_2" class="text-primary"> perfect </span>
@@ -205,12 +290,14 @@
                 <img src="../assets/images/hero/hero-3.png" alt="" />
               </div>
             </div>
-            <div class="swiper-slide flex-between-center">
+            <div class="swiper-slide md:flex-between-center md:flex-row flex flex-col-reverse gap-y-3 ">
               <!-- right -->
-              <div>
+              <div class="text-center">
                 <span data-key="flat30" class="inline-block text-lg font-light mb-5 text-light">Flat 30% Off</span>
                 <p
-                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem] ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand text-50 font-bold text-dark dark:text-white"
+                  class="relative md:after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60
+                   after:-top-[2.18rem] ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg]
+                    font-quicksand md:text-50 md:leading-[4rem] text-3xl font-bold text-dark dark:text-white"
                 >
                   <span data-key="find_your_1">Find your</span>
                   <span data-key="find_your_2" class="text-primary"> perfect </span>
@@ -230,12 +317,14 @@
                 <img src="../assets/images/hero/hero-2.png" alt="" />
               </div>
             </div>
-            <div class="swiper-slide flex-between-center">
+            <div class="swiper-slide md:flex-between-center md:flex-row flex flex-col-reverse gap-y-3 ">
               <!-- right -->
-              <div>
+              <div class="text-center">
                 <span data-key="flat30" class="inline-block text-lg font-light mb-5 text-light">Flat 30% Off</span>
                 <p
-                  class="relative after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem] ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand text-50 font-bold text-dark dark:text-white"
+                  class="relative md:after:bg-[url('../images/hero/shape-1.png')] after:absolute after:inline-block after:w-12 after:h-60 after:-top-[2.18rem] 
+                  ltr:after:-right-[1.875rem] rtl:after:-left-[1.875rem] rtl:after:rotate-[312deg] font-quicksand md:text-50 md:leading-[4rem] text-3xl font-bold text-dark
+                   dark:text-white"
                 >
                   <span data-key="find_your_1">Find your</span>
                   <span data-key="find_your_2" class="text-primary"> perfect </span>
@@ -265,17 +354,17 @@
     <section class="py-50">
       <div class="container flex">
         <!-- left -->
-        <div class="exploreCategories w-2/5 ltr:mr-3 rtl:ml-3 relative">
+        <div class="exploreCategories w-2/5 ltr:mr-3 rtl:ml-3 relative md:block hidden">
           <img src="../assets/images/category/category.jpg" class="w-full rounded-30" alt="" />
         </div>
         <!-- right -->
-        <div class="w-3/5">
-          <h2 class="rtl:font-vazir mb-7 leading-[9.25rem] text-124 font-quicksand font-bold text-white outlined-text">
+        <div class="md:w-3/5 w-full">
+          <h2 class="rtl:font-vazir mb-7 leading-[9.25rem] md:block hidden text-124 font-quicksand font-bold text-white outlined-text">
             <span data-key="explore_cat">Explore</span>
             <br />
             <span data-key="categories2">Categories</span>
           </h2>
-          <div class="swiper mySwiper2 pt-30 pl-30 rounded-tl-30 bg-white dark:bg-DarkModeBodyColor -ml-[7.5rem]">
+          <div class="swiper mySwiper2 md:pt-30 md:pl-30 rounded-tl-30 bg-white dark:bg-DarkModeBodyColor md:-ml-[7.5rem]">
             <div class="swiper-wrapper">
               <div class="swiper-slide space-y-2 bg-cat-box-color-4 h-[10.125rem] place-items-center p-30 rounded-20">
                 <div>
@@ -701,9 +790,9 @@
     </section>
     <!-- Banner-one -->
     <section class="py-50">
-      <div class="container flex-between-center rtl:space-x-reverse space-x-6">
+      <div class="container flex-between-center md:flex-row space-y-5 md:space-y-0 flex-col rtl:space-x-reverse md:space-x-6">
         <!-- left -->
-        <div class="banner banner-one overflow-hidden relative group w-1/2 flex-between-center bg-yellow-light p-30 rounded-20">
+        <div class="banner banner-one overflow-hidden relative group md:w-1/2 flex-between-center bg-yellow-light p-30 rounded-20">
           <div class="w-72 h-72 z-10 ltr:mr-5 rtl:ml-5">
             <img src="../assets/images/banner-one/one.png" class="w-full group-hover:scale-105 duration-500" alt="" />
           </div>
@@ -722,7 +811,7 @@
           </div>
         </div>
         <!-- right -->
-        <div class="banner banner-two overflow-hidden relative group w-1/2 flex-between-center bg-pink-light p-30 rounded-20 w">
+        <div class="banner banner-two overflow-hidden relative group md:w-1/2 flex-between-center bg-pink-light p-30 rounded-20 w">
           <div class="w-72 h-72 z-10 ltr:mr-5 rtl:ml-5">
             <img src="../assets/images/banner-one/two.png" class="w-full group-hover:scale-105 duration-500" alt="" />
           </div>
@@ -764,7 +853,7 @@
     <section class="py-50">
       <div class="container">
         <!-- header -->
-        <div class="flex-between-center mb-10">
+        <div class="flex-between-center mb-10 flex-wrap">
           <!-- left -->
           <div>
             <h2 class="rtl:font-vazir font-quicksand font-medium text-dark dark:text-white text-25 mb-2.5">
@@ -788,7 +877,7 @@
 
         <!-- product grid list -->
 
-        <div class="grid grid-cols-4 gap-5">
+        <div class="grid  md:grid-cols-4 grid-cols-2 gap-5">
           <div class="border border-gray-mist dark:border-DarkModeBorderColor rounded-20 overflow-hidden">
             <!-- image -->
             <div class="group relative">
@@ -1258,7 +1347,7 @@
     </section>
     <!-- Services -->
     <section class="py-50">
-      <div class="container grid grid-cols-4 gap-6">
+      <div class="container grid md:grid-cols-4 grid-cols-1 gap-6">
         <div class="place-items-center border border-gray-mist dark:border-DarkModeBorderColor rounded-20 space-y-3 p-30 text-center">
           <div class="w-12">
             <img src="../assets/images/services/1.png" class="w-full" alt="" />
@@ -1321,16 +1410,16 @@
         </div>
 
         <!-- content -->
-        <div class="flex rtl:space-x-reverse space-x-6">
+        <div class="flex rtl:space-x-reverse justify-center md:space-x-6">
           <!-- left -->
-          <div class="w-2/5 relative vendors-left">
+          <div class="w-2/5 relative vendors-left md:block hidden">
             <img src="../assets/images/vendors/img-1.jpg" class="rounded-30 w-full vendor-cover transition-opacity duration-500 ease-in-out" alt="" />
             <div class="absolute pt-5 pl-5 right-0 bg-white dark:bg-DarkModeBodyColor rounded-tl-30 top-[408px]">
               <img src="../assets/images/vendors/vendor-1.jpg" class="rounded-30 w-100 h-100 vender-logo" alt="" />
             </div>
           </div>
           <!-- right -->
-          <div class="w-3/5 space-y-3">
+          <div class="md:w-3/5 space-y-3">
             <div class="flex items-start justify-between p-30 border vendor dark:border-DarkModeBorderColor border-primary rounded-30 cursor-pointer">
               <!-- left -->
               <div class="space-y-2">
@@ -1376,7 +1465,7 @@
       </div>
     </section>
     <!-- Testimonials -->
-    <section class="py-24">
+    <section class="py-24 md:block hidden">
       <div class="container h-[283px] relative">
         <div class="relative h-full">
           <img src="../assets/images/testimonials/img-1.png" class="absolute w-70 h-70 rounded-20 -rotate-12" alt="" />
@@ -1498,8 +1587,8 @@
     </section>
     <!-- Footer -->
     <footer class="border-t dark:border-DarkModeBorderColor">
-      <div class="container flex justify-between py-50">
-        <div class="w-1/5 px-3">
+      <div class="container flex justify-between py-50 md:flex-row flex-col md:space-y-0 space-y-3">
+        <div class="md:w-1/5  px-3">
           <a href="javascript:0" class="w-[7.8rem] h-[2.4rem] block">
             <img src="../assets/images/logo/logo.png" class="w-full" alt="" />
           </a>
@@ -1516,7 +1605,7 @@
           </div>
         </div>
 
-        <div class="w-1/5 px-3">
+        <div class="md:w-1/5  px-3">
           <span data-key="footer_cat" class="block border-b pb-4 mb-4 border-gray-mist dark:border-DarkModeBorderColor dark:text-white"
             >Category</span
           >
@@ -1528,7 +1617,7 @@
             <li><a data-key="ft_bakery" href="javascript:0">Bakery</a></li>
           </ul>
         </div>
-        <div class="w-1/5 px-3">
+        <div class="md:w-1/5  px-3">
           <span data-key="footer_cat" class="block border-b pb-4 mb-4 border-gray-mist dark:border-DarkModeBorderColor dark:text-white"
             >Category</span
           >
@@ -1540,7 +1629,7 @@
             <li><a data-key="ft_bakery" href="javascript:0">Bakery</a></li>
           </ul>
         </div>
-        <div class="w-1/5 px-3">
+        <div class="md:w-1/5  px-3">
           <span data-key="footer_cat" class="block border-b pb-4 mb-4 border-gray-mist dark:border-DarkModeBorderColor dark:text-white"
             >Category</span
           >
@@ -1552,7 +1641,7 @@
             <li><a data-key="ft_bakery" href="javascript:0">Bakery</a></li>
           </ul>
         </div>
-        <div class="w-1/5 px-3">
+        <div class="md:w-1/5  px-3">
           <span data-key="contact" class="block border-b pb-4 mb-4 border-gray-mist dark:border-DarkModeBorderColor dark:text-white">Contact</span>
           <ul class="space-y-4 text-14 font-normal text-medium dark:text-DarkModeTextColor">
             <li class="flex items-baseline">
@@ -1571,7 +1660,7 @@
         </div>
       </div>
       <div class="border-t dark:border-DarkModeBorderColor py-4">
-        <div class="container flex-between-center">
+        <div class="container flex-between-center md:flex-row flex-col md:space-y-0 space-y-3">
           <p class="text-13 font-normal text-medium dark:text-DarkModeTextColor">
             <span data-key="copyright">Copyright © 2025</span>
             <span class="text-primary" data-key="copyright_by">ful-stak.dev</span>
@@ -1696,6 +1785,11 @@
         slidesPerView: 4,
         spaceBetween: 30,
         breakpoints: {
+           // زمانی که عرض صفحه کمتر از 380banner banner-one overflow-hidden relative group w-1/2 flex-between-center bg-yellow-light p-30 rounded-20 باشد
+          380: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
           // زمانی که عرض صفحه کمتر از 640px باشد
           640: {
             slidesPerView: 1,

@@ -19,8 +19,7 @@ module.exports = {
     fontFamily: {
       poppins: ["Poppins"],
       quicksand: ["Quicksand"],
-      vazir: ['Vazirmatn', 'sans-serif'],
-
+      vazir: ["Vazirmatn", "sans-serif"],
     },
     extend: {
       container: {
@@ -120,6 +119,7 @@ module.exports = {
   plugins: [
     function ({ addVariant }) {
       addVariant("menu-child-1", "&>li");
+      addVariant("menu-child-1-a", "&>li>a");
       addVariant("menu-child-hover", "&>li a:hover");
     },
   ],
